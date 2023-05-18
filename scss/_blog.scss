@@ -1,0 +1,100 @@
+@import "var";
+ 
+.myBlog{
+    background-color: $dark-1-color;
+    width: 100%;
+    padding-bottom:$titPadding;
+    @include displayFlex ($flxDir:column);
+    padding-top: 100px;
+    .blogTitle{
+        text-align: center;
+        .title2{
+            @include h2Title;
+        }
+    }
+    .owl-carousel .owl-nav.disabled {
+        display:block;
+    }
+    .owl-nav button{
+        @include myOwlCar;
+        }
+    }
+    .blogNews{
+        color: $light-1-color;
+        width: 100%;
+        @include displayFlex ($flxDir:column,$algnItm:flex-start);
+        h4{
+            font-size: 20px;
+            font-weight: 700;
+        }
+        .myDateBlog{
+            background-color: $dark-3-color;
+            font-size: 14px;
+            padding: 5px 8px;
+            margin-top: 20px;
+        }
+        .postLink{
+            color: $light-1-color;
+            transition: $timeTr;
+            &:hover{
+                color: $secondary-color;
+            }
+        }
+    }
+
+/*Media Queries 540px to 768px*/
+
+@media only screen and (min-width: 540px){
+
+}
+
+/*Media Queries 1200px*/
+
+@media (min-width: 1200px ) {
+    body{
+    .myBlog{
+        background-color: $dark-1-color;
+        height: 100vh;
+        width: 100%;
+        @include displayFlex ($flxDir:column);
+        padding-top: 100px;
+        .blogTitle{
+            text-align: center;
+            .title2{
+                @include h2Title;
+            }
+        }
+        .owl-carousel .owl-nav.disabled {
+            display:block;
+        }
+        .owl-nav button{
+            @include myOwlCar;
+            }
+        }
+        .blogNews{
+            color: $light-1-color;
+            width: 100%;
+            @include displayFlex ($flxDir:column,$algnItm:flex-start);
+            h4{
+                font-size: 20px;
+                font-weight: 700;
+            }
+            .myDateBlog{
+                background-color: $dark-3-color;
+                font-size: 14px;
+                padding: 5px 8px;
+                margin-top: 20px;
+            }
+            .postLink{
+                color: $light-1-color;
+                transition: $timeTr;
+                &:hover{
+                    color: $secondary-color;
+                }
+            }
+        }
+    
+}
+}
+
+

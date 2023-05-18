@@ -1,0 +1,2085 @@
+@charset "UTF-8";
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+* {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #242424;
+  /*footer*/
+}
+body li {
+  list-style: none;
+}
+body a {
+  text-decoration: none;
+}
+body p {
+  font-size: 18px;
+  color: #f1f1f1;
+}
+body .myHeader {
+  transition: top 0.4s;
+  margin: 0 !important;
+}
+body .myHeader .myLogoText {
+  color: #f1f1f1;
+  font-size: 25px;
+  font-weight: 800;
+  margin: 0 !important;
+}
+body .myHeader .myContNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 30px 10px 30px;
+}
+body .myHeader .myContNav .myOffCanvas {
+  background-color: #242424;
+  width: 70%;
+}
+body .myHeader .myContNav .myOffCanvas .myBtnClose {
+  filter: invert(100%) sepia(0%) saturate(4360%) hue-rotate(33deg) brightness(123%) contrast(89%);
+}
+body .myHeader .myContNav .myButton {
+  order: -1;
+  background-color: #59c378;
+}
+body .myHeader .myContNav .myButton span {
+  filter: invert(100%) sepia(0%) saturate(4360%) hue-rotate(33deg) brightness(123%) contrast(89%);
+}
+body .myHeader .myContNav .myNavbar .myUl {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .myHeader .myContNav .myNavbar .myUl .myLi {
+  font-size: 1.0666666667rem;
+  font-weight: 500;
+  line-height: 1.5;
+  color: #f1f1f1;
+  border-bottom: 3px solid #242424;
+}
+body .myHeader .myContNav .myNavbar .myUl .activeLi {
+  color: #f1f1f1;
+  border-bottom: 3px solid #59c378;
+}
+body .myHeader .myNavRight {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .myHeader .myNavRight .btnCv {
+  background-color: #59c378;
+  color: #f1f1f1;
+  border: 1px solid #59c378;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 40px;
+  padding: 10px 14px;
+  transition: 0.4s;
+}
+body .myHeader .myNavRight .btnCv:hover {
+  background-color: #41b362;
+  color: #f1f1f1;
+  border: 1px solid #59c378;
+}
+body .myMain {
+  background-image: url("../img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: 100vw 100%;
+  padding-top: 60px;
+}
+body .myMain .profileSection {
+  width: 100%;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+body .myMain .profileSection .profileText {
+  padding-top: 10%;
+}
+body .myMain .profileSection .profileText .myH1 {
+  color: #ffe600;
+  font-size: 35px;
+  font-weight: 700;
+}
+body .myMain .profileSection .profileText .myH1 .mySpam {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: 700;
+}
+body .myMain .profileSection .profileText .profileH2 {
+  color: #59c378;
+  font-size: 20px;
+  font-weight: 600;
+}
+body .myMain .profileSection .profileText p {
+  margin-bottom: 60px;
+}
+body .myMain .profileSection .profileText .btnMain {
+  background-color: #59c378;
+  color: #f1f1f1;
+  border: 1px solid #59c378;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 40px;
+  padding: 10px 14px;
+  transition: 0.4s;
+}
+body .myMain .profileSection .profileText .btnMain:hover {
+  background-color: #41b362;
+  color: #f1f1f1;
+  border: 1px solid #59c378;
+}
+body .myMain .profileSection .secImgProf {
+  position: relative;
+  padding-top: 60px;
+}
+body .myMain .profileSection .secImgProf .myProfImg {
+  width: 300px;
+  border-radius: 50%;
+}
+body .myMain .profileSection .secImgProf .floatIcon {
+  position: absolute;
+  width: 30%;
+  border: #f1f1f1 solid 15px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+body .myMain .profileSection .secImgProf .iconProf1 {
+  top: 20%;
+  right: 70%;
+}
+body .myMain .profileSection .secImgProf .iconProf2 {
+  top: 20%;
+  right: 0%;
+}
+body .myMain .profileSection .secImgProf .iconProf3 {
+  top: 75%;
+  right: 0%;
+}
+body .myFooter {
+  background-color: #242424;
+  color: #f1f1f1;
+  font-size: 16px;
+}
+body .myFooter p {
+  font-size: 16px;
+}
+body .myFooter .subFooter {
+  background: radial-gradient(circle at 70% 40%, #59c378 0%, #242424 50%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: #27292d 2px solid;
+}
+body .myFooter .subFooter .footerLeft {
+  border-right: #27292d 2px solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 70%;
+}
+body .myFooter .subFooter .footerLeft .footerLink {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+body .myFooter .subFooter .footerLeft .footerLink .myLogoText {
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: 600;
+}
+body .myFooter .subFooter .footerLeft .redes {
+  width: 25px;
+  padding-right: 5px;
+  filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(8%) hue-rotate(118deg) brightness(102%) contrast(102%);
+}
+body .myFooter .footerMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 60px;
+  padding-bottom: 60px;
+}
+body .myFooter .footerMap .colMap {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 15px;
+  padding-top: 40px;
+}
+body .myFooter .footerMap .colMap h5 {
+  font-weight: 600;
+}
+body .myFooter .footerMap .colMap ul {
+  height: 100%;
+  padding-left: 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+body .myFooter .footerMap .colMap .myform {
+  display: flex;
+  flex-direction: row;
+}
+body .myFooter .footerMap .colMap .myform .myInputMail {
+  background-color: #27292d;
+  border: #27292d solid 1px;
+  color: #f1f1f1;
+  padding: 10px;
+  border-radius: 10px 0 0 10px;
+}
+body .myFooter .footerMap .colMap .myform:focus {
+  outline: none;
+}
+body .myFooter .footerMap .colMap .myform .formEnvelope {
+  background-color: #27292d;
+  border: #27292d solid 1px;
+  font-size: 30px;
+  color: #f1f1f1;
+  border-radius: 0 10px 10px 0;
+}
+body .myFooter .myFooterAdd {
+  font-weight: 400;
+  text-align: center;
+  padding: 30px;
+  height: 50px;
+}
+body .contentArrow {
+  position: fixed;
+  bottom: 30px;
+  right: 10px;
+}
+body .contentArrow .arrow {
+  width: fit-content;
+  background-color: #41b362;
+  border: 2px solid #59c378;
+  border-radius: 100%;
+  font-size: 20px;
+  padding: 5px 10px 5px 10px;
+  text-anchor: 0;
+  color: #f1f1f1;
+  transition: 0.4s;
+}
+body .contentArrow .arrow:hover {
+  background-color: #59c378;
+  font-weight: 600;
+}
+
+/*Media Queries 540px to 768px*/
+@media only screen and (min-width: 540px) {
+  body .myHeader .myContNav .myLogoText {
+    color: #f1f1f1;
+    font-size: 38px;
+    font-weight: 800;
+  }
+  body .myHeader .myNavRight .btnCv {
+    background-color: #59c378;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 15px 25px;
+    transition: 0.4s;
+  }
+  body .myHeader .myNavRight .btnCv:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+  }
+  body .myMain .profileSection .profileText .myH1 {
+    color: #ffe600;
+    font-size: 35px;
+    font-weight: 800;
+  }
+  body .myMain .profileSection .profileText .btnMain {
+    background-color: #59c378;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 15px 18px;
+    transition: 0.4s;
+  }
+  body .myMain .profileSection .profileText .btnMain:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+  }
+  body .myMain .profileSection .secImgProf .myProfImg {
+    width: 400px;
+  }
+  body .myMain .profileSection .secImgProf .floatIcon {
+    width: 25%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf1 {
+    right: 80%;
+  }
+}
+/*Media Queries 768px to 992px*/
+@media only screen and (min-width: 768px) {
+  body .myMain {
+    padding-bottom: 80px;
+  }
+  body .myMain .profileSection .secImgProf .myProfImg {
+    width: 450px;
+  }
+  body .myMain .profileSection .secImgProf .floatIcon {
+    width: 25%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf1 {
+    right: 80%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf2 {
+    right: -10%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf3 {
+    right: -10%;
+  }
+}
+/*Media Queries 992px por medidas de navbar de bootstrap en lg(large)*/
+@media only screen and (min-width: 992px) {
+  body .myHeader .myContNav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px 10px 30px;
+  }
+  body .myHeader .myContNav .myButton {
+    order: 0;
+    background-color: #59c378;
+  }
+  body .myHeader .myContNav .myButton span {
+    filter: invert(100%) sepia(0%) saturate(4360%) hue-rotate(33deg) brightness(123%) contrast(89%);
+  }
+  body .myHeader .myContNav .myNavbar .myUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myHeader .myContNav .myNavbar .myUl .myLi {
+    border-bottom: 3px solid rgba(0, 0, 0, 0);
+  }
+  body .myHeader .myContNav .myNavbar .myUl .myLi:hover {
+    color: #f1f1f1;
+    border-bottom: 3px solid #59c378;
+  }
+  body .myHeader .myContNav .myNavbar .myUl .activeLi {
+    color: #f1f1f1;
+    border-bottom: 3px solid #59c378;
+  }
+  body .myMain .profileSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+  body .myMain .profileSection .profileText .myH1 {
+    color: #ffe600;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  body .myMain .profileSection .profileText .myH1 .mySpam {
+    color: #f1f1f1;
+    font-size: 55px;
+    font-weight: 800;
+  }
+  body .myMain .profileSection .profileText .profileH2 {
+    color: #59c378;
+    font-size: 25px;
+    font-weight: 600;
+  }
+  body .myMain .profileSection .profileText p {
+    width: 80%;
+  }
+  body .myMain .profileSection .profileText .btnMain {
+    background-color: #59c378;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+    font-weight: 700;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 18px 28px;
+    transition: 0.4s;
+  }
+  body .myMain .profileSection .profileText .btnMain:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+  }
+  body .myMain .profileSection .secImgProf .floatIcon {
+    border: #f1f1f1 solid 20px;
+  }
+  body .myMain .profileSection .secImgProf .iconProf1 {
+    top: 30%;
+    right: 75%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf2 {
+    top: 30%;
+    right: 0%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf3 {
+    top: 75%;
+    right: 10%;
+  }
+}
+/*Media Queries < 1200px*/
+@media (min-width: 1200px) {
+  body .myHeader {
+    width: 100vw;
+  }
+  body .myHeader .myLogoText {
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body .myHeader .myContNav {
+    order: 0;
+    padding: 10px 0px 10px 0px;
+  }
+  body .myHeader .myContNav .myNavbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myHeader .myContNav .myNavbar .myUl {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+  }
+  body .myHeader .myContNav .myNavbar .myUl .myLi {
+    font-size: 1.067rem;
+    font-weight: 500;
+    line-height: 1.5;
+    color: #f1f1f1;
+    border-bottom: 3px solid transparent;
+  }
+  body .myHeader .myContNav .myNavbar .myUl .myLi:hover {
+    color: #f1f1f1;
+    border-bottom: 3px solid #59c378;
+  }
+  body .myHeader .myContNav .myNavbar .myUl .activeLi {
+    color: #f1f1f1;
+    border-bottom: 3px solid #59c378;
+  }
+  body .myHeader .myNavRight {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myHeader .myNavRight .btnCv {
+    background-color: #59c378;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 15px 25px;
+    transition: 0.4s;
+  }
+  body .myHeader .myNavRight .btnCv:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+  }
+  body .myMain {
+    padding-bottom: 5%;
+  }
+  body .myMain .profileSection {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .myMain .profileSection .profileText .myH1 {
+    font-size: 50px;
+  }
+  body .myMain .profileSection .profileText .myH1 .mySpam {
+    font-size: 80px;
+  }
+  body .myMain .profileSection .profileText .profileH2 {
+    color: #59c378;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  body .myMain .profileSection .profileText .btnMain {
+    background-color: #59c378;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+    font-weight: 500;
+    font-size: 17px;
+    border-radius: 40px;
+    padding: 15px 25px;
+    transition: 0.4s;
+  }
+  body .myMain .profileSection .profileText .btnMain:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+    border: 1px solid #59c378;
+  }
+  body .myMain .profileSection .secImgProf {
+    position: relative;
+  }
+  body .myMain .profileSection .secImgProf .myProfImg {
+    margin-top: 10%;
+    margin-left: 10%;
+    position: relative;
+    width: 95%;
+  }
+  body .myMain .profileSection .secImgProf .floatIcon {
+    width: 17%;
+    border: #f1f1f1 solid 20px;
+  }
+  body .myMain .profileSection .secImgProf .iconProf1 {
+    top: 35%;
+    right: 70%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf2 {
+    top: 35%;
+    right: 0%;
+  }
+  body .myMain .profileSection .secImgProf .iconProf3 {
+    top: 85%;
+    right: 0%;
+  }
+  body .myFooter {
+    background-color: #242424;
+    color: #f1f1f1;
+    font-size: 16px;
+  }
+  body .myFooter p {
+    font-size: 16px;
+  }
+  body .myFooter .subFooter {
+    height: 60vh;
+    background: radial-gradient(circle at 70% 30%, #59c378 0%, #242424 40%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #27292d 2px solid;
+  }
+  body .myFooter .subFooter .footerLeft {
+    border-right: #27292d 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    height: 70%;
+    width: 30%;
+    padding-right: 30px;
+  }
+  body .myFooter .subFooter .footerLeft .footerLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myFooter .subFooter .footerLeft .footerLink .myLogoText {
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body .myFooter .subFooter .footerLeft .redes {
+    width: 25px;
+    padding-right: 5px;
+    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(8%) hue-rotate(118deg) brightness(102%) contrast(102%);
+  }
+  body .myFooter .footerMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  body .myFooter .footerMap .colMap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 15px;
+    width: 25%;
+  }
+  body .myFooter .footerMap .colMap h5 {
+    font-weight: 600;
+  }
+  body .myFooter .footerMap .colMap ul {
+    height: 100%;
+    padding-left: 0%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .myFooter .footerMap .colMap .myform {
+    display: flex;
+    flex-direction: row;
+  }
+  body .myFooter .footerMap .colMap .myform .myInputMail {
+    background-color: #27292d;
+    border: #27292d solid 1px;
+    color: #f1f1f1;
+    padding: 10px;
+    border-radius: 10px 0 0 10px;
+  }
+  body .myFooter .footerMap .colMap .myform:focus {
+    outline: none;
+  }
+  body .myFooter .footerMap .colMap .myform .formEnvelope {
+    background-color: #27292d;
+    border: #27292d solid 1px;
+    font-size: 30px;
+    color: #f1f1f1;
+    border-radius: 0 10px 10px 0;
+  }
+  body .myFooter .myFooterAdd {
+    font-weight: 400;
+    text-align: center;
+    padding: 30px;
+    height: 50px;
+  }
+  body .contentArrow {
+    position: fixed;
+    bottom: 30px;
+    right: 10px;
+  }
+  body .contentArrow .arrow {
+    width: fit-content;
+    background-color: #41b362;
+    border: 2px solid #59c378;
+    border-radius: 100%;
+    font-size: 20px;
+    padding: 5px 10px 5px 10px;
+    text-anchor: 0;
+    color: #f1f1f1;
+    transition: 0.4s;
+  }
+  body .contentArrow .arrow:hover {
+    background-color: #59c378;
+    font-weight: 600;
+  }
+}
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+.aboutMe {
+  background: radial-gradient(circle at 25% center, #27292d, #242424, #49086e);
+  padding: 60px 0px 60px 10px;
+}
+.aboutMe .subAboutMe {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+.aboutMe .subAboutMe .sec1 {
+  position: relative;
+}
+.aboutMe .subAboutMe .sec1 .bigCard {
+  height: 350px;
+  width: 350px;
+  background-image: linear-gradient(180deg, #414141, #27292d);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 0;
+}
+.aboutMe .subAboutMe .sec1 .bigCard .h3litCard {
+  color: #ffe600;
+  font-size: 100px;
+  font-weight: 600;
+  padding-top: 60px;
+}
+.aboutMe .subAboutMe .sec1 .litCard {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(90deg, #242424, #242424), linear-gradient(90deg, #aaaaaa, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 300px;
+  position: absolute;
+  top: 65%;
+  left: 60%;
+  z-index: 1;
+}
+.aboutMe .subAboutMe .sec1 .litCard p {
+  color: #f1f1f1;
+}
+.aboutMe .subAboutMe .sec1 .litCard .h4litCard {
+  color: #59c378;
+  font-size: 40px;
+  font-weight: 600;
+}
+.aboutMe .subAboutMe .sec2 {
+  width: 100%;
+  padding-top: 60px;
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe .subAboutMe .sec2 .contTitleAboutMe {
+  padding-bottom: 60px;
+}
+.aboutMe .subAboutMe .sec2 .contTitleAboutMe .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont {
+  display: flex;
+  flex-direction: column;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg {
+  width: 42.33%;
+  height: 130px;
+  margin: 0 15px 30px 15px;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg h5 {
+  color: #f1f1f1;
+  font-size: 35px;
+  font-weight: 600;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg p {
+  font-size: 18px;
+  font-weight: 500;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp1 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #ffe600, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp1 p {
+  color: #ffe600;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp2 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #59c378, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp2 p {
+  color: #59c378;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp3 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #dd503c, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp3 p {
+  color: #dd503c;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp4 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #a2650d, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp4 p {
+  color: #a2650d;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp5 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #126dae, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp5 p {
+  color: #126dae;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp6 {
+  border-radius: 10px;
+  border: double 3px transparent;
+  background-image: linear-gradient(180deg, #242424, #242424), linear-gradient(180deg, #730bb0, rgba(36, 36, 36, 0.4235294118));
+  background-origin: border-box;
+  background-clip: content-box, border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp6 p {
+  color: #730bb0;
+}
+
+/*Work Experience */
+.workExp {
+  background: radial-gradient(circle at center center, #dd503c 0%, #242424 55%);
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 60px 0px 60px 0px;
+}
+.workExp .secExp1 {
+  color: #f1f1f1;
+}
+.workExp .secExp1 .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.workExp .secExp1 p {
+  padding-bottom: 60px;
+}
+.workExp .secExp2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  height: 100%;
+}
+.workExp .secExp2 .work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: #27292d;
+  border-radius: 10px;
+  color: #f1f1f1;
+  width: 100%;
+  height: 180px;
+  text-align: start;
+}
+.workExp .secExp2 .work h3 {
+  font-weight: 600;
+  font-size: 16px;
+  margin-left: 25px;
+}
+.workExp .secExp2 .work img {
+  width: 90px;
+  margin-top: 25px;
+}
+.workExp .secExp2 .work h4 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-left: 25px;
+}
+.workExp .secExp2 .work p {
+  color: #dd503c;
+  font-size: 14px;
+  margin-left: 25px;
+}
+.workExp .secExp2 .work a {
+  color: #f1f1f1;
+  font-weight: 600;
+}
+
+/*Media Queries 540px to 768px*/
+@media only screen and (min-width: 540px) {
+  body {
+    /*Work Experience */
+  }
+  body .aboutMe {
+    background: radial-gradient(circle at 25% center, #27292d, #242424, #49086e);
+  }
+  body .aboutMe .subAboutMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+  }
+  body .aboutMe .subAboutMe .sec1 {
+    position: relative;
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard {
+    height: 350px;
+    width: 350px;
+    background-image: linear-gradient(180deg, #414141, #27292d);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 0;
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard .h3litCard {
+    color: #ffe600;
+    font-size: 100px;
+    font-weight: 600;
+    padding-top: 60px;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard {
+    border-radius: 10px;
+    border: double 3px transparent;
+    background-image: linear-gradient(90deg, #242424, #242424), linear-gradient(90deg, #aaaaaa, rgba(36, 36, 36, 0.4235294118));
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 300px;
+    position: absolute;
+    top: 65%;
+    left: 60%;
+    z-index: 1;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard p {
+    color: #f1f1f1;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard .h4litCard {
+    color: #59c378;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body .aboutMe .subAboutMe .sec2 .contTitleAboutMe {
+    padding-bottom: 60px;
+  }
+  body .aboutMe .subAboutMe .sec2 .contTitleAboutMe .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  body .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg {
+    width: 25%;
+    height: 130px;
+    margin-bottom: 30px;
+  }
+  body .workExp .secExp1 .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+}
+/*Media Queries 768px to 992px*/
+@media only screen and (min-width: 768px) {
+  body {
+    /*Work Experience */
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard .h3litCard {
+    color: #ffe600;
+    font-size: 130px;
+    font-weight: 800;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard {
+    top: 80%;
+    left: 50%;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard .h4litCard {
+    padding: 25px 0px 25px 0px;
+  }
+  body .aboutMe .subAboutMe .sec2 {
+    padding-top: 0;
+  }
+  body .aboutMe .subAboutMe .sec2 .contTitleAboutMe .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+    padding-top: 60px;
+  }
+  body .workExp {
+    padding: 80px 0px 80px 0px;
+  }
+  body .workExp .secExp1 .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+}
+/*Media Queries 992px por medidas de navbar de bootstrap en lg(large)*/
+@media only screen and (min-width: 992px) {
+  body {
+    /*Work Experience */
+  }
+  body .aboutMe {
+    padding: 60px 0px 0 0px;
+  }
+  body .aboutMe .subAboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .aboutMe .subAboutMe .sec1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard {
+    height: 450px;
+    width: 350px;
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard .h3litCard {
+    color: #ffe600;
+    font-size: 130px;
+    font-weight: 800;
+    padding-top: 60px;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard {
+    width: 300px;
+    top: 65%;
+    left: 20%;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard .h4litCard {
+    color: #59c378;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body .aboutMe .subAboutMe .sec2 {
+    width: 100%;
+  }
+  body .aboutMe .subAboutMe .sec2 .contTitleAboutMe {
+    padding-bottom: 60px;
+  }
+  body .aboutMe .subAboutMe .sec2 .contTitleAboutMe .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  body .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+    width: 100%;
+  }
+  body .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg {
+    width: 130px;
+    height: 130px;
+    margin: 0 10px 30px 0px;
+  }
+  body .workExp {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 90px 0px 90px 0px;
+    text-align: center;
+  }
+  body .workExp .secExp1 {
+    width: 50%;
+  }
+  body .workExp .secExp1 .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  body .workExp .secExp2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  body .workExp .secExp2 .work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27292d;
+    border-radius: 10px;
+    color: #f1f1f1;
+    width: 100%;
+    height: 120px;
+  }
+  body .workExp .secExp2 .work h3 {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  body .workExp .secExp2 .work img {
+    width: 90px;
+  }
+  body .workExp .secExp2 .work p {
+    color: #dd503c;
+    font-size: 15px;
+  }
+  body .workExp .secExp2 .work a {
+    color: #f1f1f1;
+    font-weight: 600;
+  }
+}
+/*Media Queries 1200px*/
+@media (min-width: 1200px) {
+  body {
+    /*Work Experience */
+  }
+  body .aboutMe .subAboutMe {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+  }
+  body .aboutMe .subAboutMe .sec1 .bigCard {
+    width: 60%;
+    height: 450px;
+  }
+  body .aboutMe .subAboutMe .sec1 .litCard {
+    top: 65%;
+    left: 30%;
+  }
+  body .aboutMe .subAboutMe .sec2 .title2 {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  body .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg {
+    width: 180px;
+    height: 180px;
+    margin: 20px auto;
+  }
+  body .workExp .secExp2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  body .workExp .secExp2 .work {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #27292d;
+    border-radius: 10px;
+    color: #f1f1f1;
+    width: 100%;
+    height: 120px;
+  }
+  body .workExp .secExp2 .work h3 {
+    font-weight: 600;
+    font-size: 35px;
+  }
+  body .workExp .secExp2 .work img {
+    width: 90px;
+  }
+  body .workExp .secExp2 .work p {
+    color: #dd503c;
+    font-size: 15px;
+  }
+  body .workExp .secExp2 .work a {
+    color: #f1f1f1;
+    font-weight: 600;
+  }
+}
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+.myServ {
+  width: 100%;
+  padding: 60px 0 60px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.myServ .subArt1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.myServ .subArt1 .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.myServ .subArt1 .secciones1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+  padding: 60px 0 60px 0;
+}
+.myServ .subArt1 .secciones1 .btnSec {
+  width: 120px;
+  background-color: #555555;
+  padding: 15px 25px 15px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 14px;
+  text-align: center;
+}
+.myServ .subArt1 .secciones1 .btnSec a {
+  color: #f1f1f1;
+}
+.myServ .subArt1 .secciones1 .btnactivo {
+  border: #555555 solid 3px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.myServ .subArt1 .secciones1 .btnactivo a {
+  color: #ffe600;
+}
+.myServ .subArt2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+.myServ .subArt2 .myCards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: #555555 solid 2px;
+  border-radius: 10px;
+  width: 350px;
+  height: 350px;
+  padding: 20px;
+  text-align: center;
+}
+.myServ .subArt2 .myCards h3 {
+  color: #f1f1f1;
+  font-weight: 600;
+}
+.myServ .subArt2 .myCards .divImgArt {
+  width: fit-content;
+  background-color: #555555;
+  border-radius: 50%;
+  padding: 30px;
+}
+.myServ .subArt2 .myCards .imgArt {
+  width: 60px;
+  filter: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
+}
+
+/*pricing*/
+.pricing {
+  background: radial-gradient(circle at center center, #ffe203 0%, #242424 35%);
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pricing .pricingTitles p {
+  padding-top: 15px;
+  padding-bottom: 40px;
+}
+.pricing .pricingTitles .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.pricing .planes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+}
+.pricing .planes li {
+  padding-bottom: 10px;
+}
+.pricing .planes .plan {
+  background-color: #27292d;
+  width: fit-content;
+  height: 550px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+}
+.pricing .planes .plan .mySpan {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+}
+.pricing .planes .plan .mySpan spam {
+  font-size: 24px;
+}
+.pricing .planes .plan p {
+  font-size: 18px;
+  width: 70%;
+  padding-bottom: 30px;
+  border-bottom: #59c378 solid 1px;
+}
+.pricing .planes .plan ul {
+  padding-left: 0%;
+}
+.pricing .planes .plan .planType {
+  background-color: #59c378;
+  font-size: 18px;
+  width: fit-content;
+  padding: 8px 28px;
+  border-radius: 0 0 10px 10px;
+}
+.pricing .planes .plan .planType .mySpan {
+  font-size: 40px;
+  font-weight: 800;
+}
+.pricing .planes .plan .planBtn {
+  color: #59c378;
+  font-weight: 600;
+  border: #59c378 solid 1px;
+  width: fit-content;
+  padding: 8px 28px;
+  margin-bottom: 50px;
+  transition: 0.4s;
+}
+.pricing .planes .plan .planBtn:hover {
+  background-color: #41b362;
+  color: #f1f1f1;
+}
+
+/*Media Queries 540px to 768px*/
+@media only screen and (min-width: 540px) {
+  body .myServ .subArt1 .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  body .pricing .pricingTitles .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  /*Media Queries 1200px*/
+}
+@media only screen and (min-width: 540px) and (min-width: 1200px) {
+  body {
+    /*pricing*/
+  }
+  body .myServ {
+    /* background: radial-gradient(circle at 15% -5%, $secondary-hover 0,8% , $dark-1-color 35%);*/
+    height: 100vh;
+    width: 100%;
+    padding: 130px 0 130px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myServ .subArt1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  body .myServ .subArt1 .title2 {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  body .myServ .subArt1 .secciones1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    padding: 50px 0 50px 0;
+  }
+  body .myServ .subArt1 .secciones1 .btnSec {
+    width: 200px;
+    background-color: #555555;
+    padding: 15px 25px 15px 25px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 22px;
+    text-align: center;
+  }
+  body .myServ .subArt1 .secciones1 .btnSec a {
+    color: #f1f1f1;
+  }
+  body .myServ .subArt1 .secciones1 .btnactivo {
+    border: #555555 solid 3px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  body .myServ .subArt1 .secciones1 .btnactivo a {
+    color: #ffe600;
+  }
+  body .myServ .subArt2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+  }
+  body .myServ .subArt2 .myCards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    border: #555555 solid 2px;
+    border-radius: 10px;
+    width: 400px;
+    height: 450px;
+    padding: 20px;
+  }
+  body .myServ .subArt2 .myCards h3 {
+    color: #f1f1f1;
+    font-weight: 600;
+  }
+  body .myServ .subArt2 .myCards .divImgArt {
+    width: fit-content;
+    background-color: #555555;
+    border-radius: 50%;
+    padding: 30px;
+  }
+  body .myServ .subArt2 .myCards .imgArt {
+    width: 60px;
+    filter: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
+  }
+  body .pricing {
+    background: radial-gradient(circle at center center, #ffe203 0%, #242424 35%);
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .pricing .pricingTitles {
+    width: 35%;
+  }
+  body .pricing .pricingTitles p {
+    padding-top: 15px;
+    padding-bottom: 40px;
+  }
+  body .pricing .pricingTitles .title2 {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+    font-size: 24px;
+  }
+  body .pricing .planes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+  }
+  body .pricing .planes li {
+    padding-bottom: 10px;
+  }
+  body .pricing .planes .plan {
+    background-color: #27292d;
+    height: 550px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: #f1f1f1;
+  }
+  body .pricing .planes .plan h4 {
+    font-size: 18px;
+  }
+  body .pricing .planes .plan p {
+    font-size: 18px;
+    width: 70%;
+    padding-bottom: 30px;
+    border-bottom: #59c378 solid 1px;
+  }
+  body .pricing .planes .plan ul {
+    padding-left: 0%;
+  }
+  body .pricing .planes .plan .planType {
+    background-color: #59c378;
+    font-size: 17px;
+    width: fit-content;
+    padding: 8px 28px;
+    border-radius: 0 0 10px 10px;
+  }
+  body .pricing .planes .plan .planType .mySpan {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  body .pricing .planes .plan .planBtn {
+    color: #59c378;
+    font-weight: 600;
+    border: #59c378 solid 1px;
+    width: fit-content;
+    padding: 8px 28px;
+    margin-bottom: 50px;
+    transition: 0.4s;
+  }
+  body .pricing .planes .plan .planBtn:hover {
+    background-color: #41b362;
+    color: #f1f1f1;
+  }
+}
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+/*portfolio*/
+.portfolio2 {
+  /*clases del carrousel*/
+}
+.portfolio2 .port2title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding-top: 80px;
+}
+.portfolio2 .port2title .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+  font-size: 24px;
+}
+.portfolio2 .port2title .port2TitleImg {
+  width: fit-content;
+  background-color: #555555;
+  border-radius: 50%;
+  padding: 30px;
+  border: #27292d solid 10px;
+  outline: #555555 2px dashed;
+}
+.portfolio2 .port2title .port2TitleImg .workIcon {
+  width: 60px;
+  filter: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
+}
+.portfolio2 .cardCont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 50px;
+}
+.portfolio2 .cardCont .contImg {
+  overflow: hidden;
+}
+.portfolio2 .cardCont .contImg .imgCar {
+  height: 400px;
+  width: auto;
+  transition: transform 0.4s;
+}
+.portfolio2 .cardCont .contImg .imgCar:hover {
+  transform: scale(1.2);
+}
+.portfolio2 .cardCont .myCardPort {
+  color: #f1f1f1;
+  padding-top: 30px;
+}
+.portfolio2 .cardCont .myCardPort h4 {
+  font-weight: 600;
+}
+.portfolio2 .cardCont .myCardPort p {
+  font-size: 15px;
+  padding-top: 10px;
+}
+.portfolio2 .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.portfolio2 .owl-nav button {
+  background-color: #242424 !important;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #59c378 !important;
+  border-radius: 50% !important;
+  transition: 0.4s;
+}
+.portfolio2 .owl-nav button span {
+  color: #59c378;
+}
+.portfolio2 .owl-nav button:hover {
+  background-color: #41b362 !important;
+}
+.portfolio2 .owl-nav button:hover span {
+  color: #f1f1f1;
+}
+
+/*Opinion*/
+.opinionBackground {
+  background: radial-gradient(circle at 50% 70%, rgba(172, 138, 19, 0.4941176471) 0%, #242424 40%);
+  padding: 150px 0 60px 0;
+  padding: 150px 0px 60px 0px;
+}
+.opinionBackground .opinions {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: #f1f1f1;
+}
+.opinionBackground .opinions .opinionImg {
+  width: 30%;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10px #242424, 0 0 0 12px #aaaaaa, 0 0 0 24px #242424, 0 0 0 26px #555555, 0 0 0 38px #242424, 0 0 0 40px #27292d, 0 0 0 52px #242424, 0 0 0 54px #27292d;
+  margin-bottom: 90px;
+}
+.opinionBackground .opinions .opinionImg .imgopion {
+  width: 100%;
+  border-radius: 50%;
+}
+.opinionBackground .opinions .opinionsText .subOpinionText h3 {
+  font-weight: 600;
+}
+.opinionBackground .opinions .opinionsText .subOpinionText p {
+  font-size: 16px;
+}
+.opinionBackground .opinions .opinionsText .subOpinionText h4 {
+  font-weight: 600;
+}
+.opinionBackground .opinions .opinionsText .subOpinionText h4 span {
+  font-weight: 500;
+  font-size: 14px;
+}
+.opinionBackground .opinions .opinionsText .btnPrev {
+  width: 90%;
+}
+
+/*Media Queries 540px to 768px*/
+@media only screen and (min-width: 540px) {
+  body #myPortfolio .portfolio2 .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+  body #myPortfolio .portfolio2 .cardCont .contImg .imgCar {
+    height: 100% !important;
+    width: 100% !important;
+  }
+  body #myPortfolio .opinionBackground .opinions .opinionImg {
+    width: 50%;
+  }
+}
+/*Media Queries 768px*/
+/*Media Queries 992px*/
+@media (min-width: 992px) {
+  body {
+    /*Opinion*/
+  }
+  body .portfolio2 {
+    height: 100vh;
+    /*clases del carrousel*/
+  }
+  body .portfolio2 .port2title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  body .portfolio2 .port2title .title2 {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  body .portfolio2 .port2title .port2TitleImg {
+    width: fit-content;
+    background-color: #555555;
+    border-radius: 50%;
+    padding: 30px;
+    border: #27292d solid 10px;
+    outline: #555555 2px dashed;
+  }
+  body .portfolio2 .port2title .port2TitleImg .workIcon {
+    width: 60px;
+    filter: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
+  }
+  body .portfolio2 .contImg {
+    overflow: hidden;
+  }
+  body .portfolio2 .contImg .imgCar {
+    height: 400px;
+    width: auto;
+    transition: transform 0.4s;
+  }
+  body .portfolio2 .contImg .imgCar:hover {
+    transform: scale(1.2);
+  }
+  body .portfolio2 .myCardPort {
+    color: #f1f1f1;
+    padding-top: 30px;
+  }
+  body .portfolio2 .myCardPort h4 {
+    font-weight: 600;
+  }
+  body .portfolio2 .myCardPort p {
+    font-size: 15px;
+    padding-top: 10px;
+  }
+  body .portfolio2 .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  body .portfolio2 .owl-nav button {
+    background-color: #242424 !important;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #59c378 !important;
+    border-radius: 50% !important;
+    transition: 0.4s;
+  }
+  body .portfolio2 .owl-nav button span {
+    color: #59c378;
+  }
+  body .portfolio2 .owl-nav button:hover {
+    background-color: #41b362 !important;
+  }
+  body .portfolio2 .owl-nav button:hover span {
+    color: #f1f1f1;
+  }
+  body .opinionBackground {
+    background-image: url("../img/bg-quotes.jpg");
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+  }
+  body .opinionBackground .opinions {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #f1f1f1;
+  }
+  body .opinionBackground .opinions .opinionImg .imgopion {
+    width: 60%;
+  }
+  body .opinionBackground .opinions .opinionText h3 {
+    font-weight: 600;
+  }
+  body .opinionBackground .opinions .opinionText p {
+    font-size: 16px;
+  }
+  body .opinionBackground .opinions .opinionText h4 {
+    font-weight: 600;
+  }
+  body .opinionBackground .opinions .opinionText h4 span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+}
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+.myBlog {
+  background-color: #242424;
+  width: 100%;
+  padding-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 100px;
+}
+.myBlog .blogTitle {
+  text-align: center;
+}
+.myBlog .blogTitle .title2 {
+  color: #f1f1f1;
+  font-size: 50px;
+  font-weight: 600;
+}
+.myBlog .owl-carousel .owl-nav.disabled {
+  display: block;
+}
+.myBlog .owl-nav button {
+  background-color: #242424 !important;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #59c378 !important;
+  border-radius: 50% !important;
+  transition: 0.4s;
+}
+.myBlog .owl-nav button span {
+  color: #59c378;
+}
+.myBlog .owl-nav button:hover {
+  background-color: #41b362 !important;
+}
+.myBlog .owl-nav button:hover span {
+  color: #f1f1f1;
+}
+
+.blogNews {
+  color: #f1f1f1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.blogNews h4 {
+  font-size: 20px;
+  font-weight: 700;
+}
+.blogNews .myDateBlog {
+  background-color: #555555;
+  font-size: 14px;
+  padding: 5px 8px;
+  margin-top: 20px;
+}
+.blogNews .postLink {
+  color: #f1f1f1;
+  transition: 0.4s;
+}
+.blogNews .postLink:hover {
+  color: #ffe600;
+}
+
+/*Media Queries 540px to 768px*/
+/*Media Queries 1200px*/
+@media (min-width: 1200px) {
+  body .myBlog {
+    background-color: #242424;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+  }
+  body .myBlog .blogTitle {
+    text-align: center;
+  }
+  body .myBlog .blogTitle .title2 {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  body .myBlog .owl-carousel .owl-nav.disabled {
+    display: block;
+  }
+  body .myBlog .owl-nav button {
+    background-color: #242424 !important;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #59c378 !important;
+    border-radius: 50% !important;
+    transition: 0.4s;
+  }
+  body .myBlog .owl-nav button span {
+    color: #59c378;
+  }
+  body .myBlog .owl-nav button:hover {
+    background-color: #41b362 !important;
+  }
+  body .myBlog .owl-nav button:hover span {
+    color: #f1f1f1;
+  }
+  body .blogNews {
+    color: #f1f1f1;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  body .blogNews h4 {
+    font-size: 20px;
+    font-weight: 700;
+  }
+  body .blogNews .myDateBlog {
+    background-color: #555555;
+    font-size: 14px;
+    padding: 5px 8px;
+    margin-top: 20px;
+  }
+  body .blogNews .postLink {
+    color: #f1f1f1;
+    transition: 0.4s;
+  }
+  body .blogNews .postLink:hover {
+    color: #ffe600;
+  }
+}
+/*VARIABLES DE COLOR*/
+/*TIME in Transition*/
+/*Título para hasta 540*/
+/*Título para hasta 768*/
+/*Título para hasta 992*/
+/*padding de titulo*/
+/*padding de secciones*/
+/*padding de secciones grande*/
+/*MIXINS*/
+.contactUs {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  body .myFooter .contactUs {
+    display: block;
+    background: url("../img/contact.png") no-repeat;
+    width: 95%;
+    height: 300px;
+    margin-top: 100px;
+  }
+  body .myFooter .contactUs .subContact {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  body .myFooter .contactUs .subContact .h2Contact {
+    color: #f1f1f1;
+    font-size: 35px;
+    font-weight: 600;
+    width: 40%;
+  }
+  body .myFooter .contactUs .subContact .btnContact {
+    background-color: #242424;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    color: #f1f1f1;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+}
+@media (min-width: 1200px) {
+  body .myFooter .contactUs {
+    display: block;
+    background: url("../img/contact.png") no-repeat;
+    width: 90%;
+    height: 300px;
+    margin-top: 100px;
+  }
+  body .myFooter .contactUs .subContact {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 80px;
+  }
+  body .myFooter .contactUs .subContact .h2Contact {
+    color: #f1f1f1;
+    font-size: 50px;
+    font-weight: 600;
+  }
+  body .myFooter .contactUs .subContact .btnContact {
+    background-color: #242424;
+    width: fit-content;
+    height: fit-content;
+    padding: 10px 20px;
+    color: #f1f1f1;
+    font-weight: 600;
+    border-radius: 5px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" />
+
+        <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" />
+
+
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <title>Document</title>
+</head>
+<body> 
+    <header class="myHeader  fixed-top" id="myHeader">        
+        <nav class="myContNav navbar navbar-expand-lg container-xl">
+            <div class="container-fluid">
+                <a class="navbar-brand wip_logo col-lg-2  myLogoText" href="index.html"><img src="./img/logo.png" class="myLogo" alt="profile picture">&nbsp;&nbsp;Elito.</a>
+              <button class="myButton navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="myOffCanvas offcanvas offcanvas-start col-lg-8" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <a class="navbar-brand wip_logo myLogoText" href="index.html"><img src="./img/logo.png" class="myLogo" alt="profile picture">&nbsp;&nbsp;Elito.</a>
+                  <button type="button" class="myBtnClose btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="myNavbar offcanvas-body">
+                  <ul class="myUl navbar-nav flex-grow-1 pe-3 ">
+                    <li class="nav-item">
+                      <a class="myLi nav-link active" aria-current="page" href="#myHome">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="myLi nav-link " aria-current="page" href="#myAboutUs">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="myLi nav-link " aria-current="page" href="#myService">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="myLi nav-link " aria-current="page" href="#myPortfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="myLi nav-link " aria-current="page" href="#myBlog">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="myLi nav-link " aria-current="page" href="#myContact">Contact</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="myNavRight col-lg-2 ">
+                <a href="./img/Agustín Coiro_CV.pdf" download="Agustín Coiro_CV" class="btnCv">Resume&nbsp; &nbsp;↓</a>
+            </div>
+            </div>
+            </nav>
+    </header>
+
+
+    <article class="myMain sections" id="myHome">
+        <section class="profileSection  container-sm ">
+            <section class="col-lg-6 profileText">
+                <h1 class="myH1">Hello,<br> <span class="mySpam">I Am Ronald.</span></h1>
+                <h2 class="profileH2">UI/UX Designer</h2>
+                <p>Must explain to how all this mistaken idea denouncing pleasure pain the system and expound the actua.</p>
+                <a href="./img/Agustín Coiro_CV.pdf" download="Agustín Coiro_CV" class="btnMain">Hire me →</a>
+            </section>
+            <section class="col-lg-6 secImgProf">
+                <img class="myProfImg" src="./img/profile.jpg" alt=" profile pick">
+                <div><img src="https://wpocean.com/html/tf/elito-live/assets/images/icon/photoshop.svg" alt="ps" class="iconProf1 floatIcon"></div>
+                <div><img src="https://wpocean.com/html/tf/elito-live/assets/images/icon/illustrator.svg" alt="ai" class="iconProf2 floatIcon"></div>
+                <div><img src="https://wpocean.com/html/tf/elito-live/assets/images/icon/diamond.svg" alt="diamond" class="iconProf3 floatIcon"></div>
+            </section>
+        </section>
+    </article>
+
+    <article id="myAboutUs">
+    <section class="aboutMe sections">   
+        <section class="container-sm subAboutMe">
+            <section class="sec1 col-6">
+                <div class="bigCard">
+                    <h3 class="h3litCard">08</h3>
+                    <p>Years of Experience </p>
+                </div>
+                <div class="litCard">
+                    <h4 class="h4litCard counter" data-target="100"></h4><h4 class="h4litCard">%</h4>
+                    <p>Clients<br> Satisfections</p>
+                </div>
+            </section>
+            <section class="sec2">
+                <div class="contTitleAboutMe">
+                    <h2 class="title2">About Me</h2>
+                    <p>Must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account the system and expound the actual and praising pain was born.</p>
+                </div>
+                <div class="skillsCont">
+                    <div class="skillsSub">
+                        <div class="myProg mp1">
+                            <h5 class="counter" data-target="98"></h5>
+                            <p>Figma</p>
+                        </div>
+                        <div class="myProg mp2">
+                            <h5 class="counter" data-target="92"></h5>
+                            <p>Sketch</p>
+                        </div>
+                        <div class="myProg mp3">
+                            <h5 class="counter" data-target="88"></h5>
+                            <p>Photoshop</p>
+                        </div>
+                        <div class="myProg mp4">
+                            <h5 class="counter" data-target="72"></h5>
+                            <p>Illustrator</p>
+                        </div>
+                        <div class="myProg mp5">
+                            <h5 class="counter" data-target="43"></h5>
+                            <p>WordPress</p>
+                        </div>
+                        <div class="myProg mp6">
+                            <h5 class="counter" data-target="37"></h5>
+                            <p>ReactJS</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </section>
+    <section class="workExp" >
+        <section class="secExp1 container-sm">
+            <h2 class="title2"> My Work Experience </h2>
+            <p>Must explain to you how all this mistaken idea of denouncing pleasure born and give you a complete account the system</p>
+        </section>
+        <section class="secExp2 container-sm">
+            <div class="work">
+                <h3 class="itemJob col-8 col-lg-4">2015 - 2016</h3>
+                <img src="https://wpocean.com/html/tf/elito-live/assets/images/work/1.png" alt=""class="itemJob col-4 col-lg-2">
+                <div class="itemJob col-8 col-lg-4">
+                    <h4>Junior Visual Designer </h4>
+                    <p >Trapeza Group, USA.</p>
+                </div>
+                <a href="" class="itemJob col-4 col-lg-2">→ Go to website</a>
+            </div>
+            <div class="work">
+                <h3 class="itemJob col-8 col-lg-4">2017 - 2018</h3>
+                <img src="https://wpocean.com/html/tf/elito-live/assets/images/work/2.png" alt="" class="itemJob col-4 col-lg-2">
+                <div class="itemJob col-8 col-lg-4">
+                    <h4>UI/UX Designer </h4>
+                    <p>Gallerie Ontario, Canada (Remote)</p>
+                </div>
+                <a href="" class="itemJob col-4 col-lg-2"> → Go to website</a>
+            </div>
+            <div class="work">
+                <h3 class="itemJob col-8 col-lg-4">2019 - 2020</h3>
+                <img src="https://wpocean.com/html/tf/elito-live/assets/images/work/3.png" alt="" class="itemJob col-4 col-lg-2">
+                <div class="itemJob col-8 col-lg-4">
+                    <h4>Seinor UI/UX Desinger </h4>
+                    <p>Morson Hybrid, Canada</p></div>
+                <a href="" class="itemJob col-4 col-lg-2"> → Go to website</a>
+            </div>
+            <div class="work">
+                <h3 class="itemJob col-8 col-lg-4">2019 - Present</h3>
+                <img src="https://wpocean.com/html/tf/elito-live/assets/images/work/4.png" alt="" class="itemJob col-4 col-lg-2">
+                <div class="itemJob col-8 col-lg-4">
+                    <h4>Product Designer </h4>
+                    <p>Myant Inc. Etobicoke, ON (Remote)</p></div>
+                <a href="" class="itemJob col-4 col-lg-2"> → Go to website</a>
+            </div>
+        </section>
+    </section>
+    </article>
+
+    <article id="myService">
+    <section class="myServ sections" >
+        <section class="subArt1 container-sm">
+            <h2 class="title2">Popular Services</h2>
+            <p>Must explain to you how all this mistaken idea of denouncing pleasure<br> born and give you a complete account the system</p>
+            <ul class="secciones1">
+                <li class="btnSec"><a href="#Development" >Development</a></li>
+                <li class="btnSec btnactivo"><a href="#Design">Design</a></li>
+                <li class="btnSec"><a href="#Marketing">Marketing</a></li>
+            </ul>
+        </section>
+        <section class="subArt2">
+                <div class="myCards">
+                    <div class="divImgArt"><img src="./img/icons/icon2-1.png" alt="icono diseño" class="imgArt"></div>
+                    <h3>Graphic Design</h3>
+                    <p>Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account the system.</p>
+                </div>
+                <div class="myCards">
+                    <div class="divImgArt"><img src="./img/icons/icon2-2.png" alt="icono diseño" class="imgArt"></div>
+                    <h3>Brand Identity</h3>
+                    <p>Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account the system.</p>
+                </div>
+            <div class="myCards">
+                    <div class="divImgArt"><img src="./img/icons/icon2-3.png" alt="icono diseño" class="imgArt"></div>
+                    <h3>UI/UX Design</h3>
+                    <p>Explain to you how all this mistaken idea of denouncing pleasure born and give you complete account the system.</p>
+            </div>
+        </section>
+    </section>
+        <section class="pricing container-md">
+        <section class="pricingTitles container-sm">
+            <h2 class="title2">Pricing Plan</h2>
+            <p>Must explain to you how all this mistaken idea pleasure born and give you a complete account.</p>
+        </section>
+        <section>
+            <section class="container-sm planes">
+                <div class="plan col-4">
+                    <h3 class="planType">BASIC</h3>
+                    <h4><span class="mySpan">$120/</span> PER MONTH</h4>
+                    <p>Determine the Best Pricing Strategy For Your Business.</p>
+                    <ul>
+                        <li>Softwere Development</li>
+                        <li>Web Development</li>
+                        <li>Digital Marketing</li>
+                        <li>Graphic Design</li>
+                        <li>24/Support</li>
+                    </ul>
+                    <a href="#" class="planBtn">CHOOSE PLAN</a>
+                </div>
+                <div class="plan col-4">
+                    <h3 class="planType">PREMIUM</h3>
+                    <h4> <span class="mySpan">$210/</span> PER MONTH</h4>
+                    <p>Determine the Best Pricing Strategy For Your Business.</p>
+                    <ul>
+                        <li>Softwere Development</li>
+                        <li>Web Development</li>
+                        <li>Digital Marketing</li>
+                        <li>Graphic Design</li>
+                        <li>24/Support</li>
+                    </ul>
+                    <a href="#" class="planBtn">CHOOSE PLAN</a>
+                </div>
+                <div class="plan col-4">
+                    <h3 class="planType">ADVANCED</h3>
+                    <h4><span class="mySpan">$373/</span> PER MONTH</h4>
+                    <p>Determine the Best Pricing Strategy For Your Business.</p>
+                    <ul>
+                        <li>Softwere Development</li>
+                        <li>Web Development</li>
+                        <li>Digital Marketing</li>
+                        <li>Graphic Design</li>
+                        <li>24/Support</li>
+                    </ul>
+                    <a href="#" class="planBtn">CHOOSE PLAN</a>
+                </div>
+            </section>
+        </section>
+    </section>
+    </article>
+
+    <article id="myPortfolio">
+    <section class="portfolio2 sections" >
+        <section class="container-sm port2title">
+            <div class="col-lg-4">
+                <h2 class="title2"> Recent Work. </h2>
+                <p>Must explain to you how all this mistaken idea pleasure born and give you a complete account.</p>
+            </div>
+            <div class="port2TitleImg"><img src="img/self-growth.png" alt="incon self-growth" class="workIcon"></div>
+        </section>
+
+        <section>
+        <div class="container-sm my-lg-5">
+        <div class="row">
+            <div class="col-12 m-auto">
+                <div class="owl-carousel owl-theme">
+                    
+                    <div class="item mb-4">
+                        <div class=" border-0  cardCont">
+                            <div class="contImg">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/project/img-1.jpg" alt="" class=" imgCar">
+                            </div>                            <div class="">
+                                <div class=" myCardPort">
+                                    <h4>Arkio - Architecture & Interior WordPress Theme</h4>
+                                    <p>Architecture / Business</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class=" border-0  cardCont">
+                            <div class="contImg">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/project/img-2.jpg" alt="" class=" imgCar">
+                            </div>
+                            <div class="card-body">
+                                <div class=" myCardPort">
+                                    <h4>Follio - Multipurpose Portfolio HTML5 Template</h4>
+                                    <p>Web Design</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" border-0  cardCont">
+                            <div class="contImg">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/project/img-3.jpg" alt="" class=" imgCar">
+                            </div>                           
+                             <div class="">
+                                <div class=" myCardPort">
+                                    <h4>Elito - Creative Portfolio HTML5 Template</h4>
+                                    <p>Website / Creative</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>
+    </section>
+
+    <section class="opinionBackground">
+            <section class="opinions container-sm ">
+                <section class="col-6 opinionImg">   
+                    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+                        <div class="carousel-inner">
+                          <div class="carousel-item myCarouselInner active">
+                            <img class="imgopion"  src="./img/quotes/img-1.png" alt="">
+                          </div>
+                          <div class="carousel-item myCarouselInner">
+                            <img class="imgopion"  src="./img/quotes/img-2.jpg" alt="">
+                          </div>
+                          <div class="carousel-item myCarouselInner">
+                            <img class="imgopion"  src="./img/quotes/img-3.jpg" alt="">
+                          </div>
+                        </div>
+                        <button class="carousel-control-prev visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                        </button>
+                        <button class="carousel-control-next visually-hidden" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                        </button>
+                    </div>
+                </section>
+                <section class="col-lg-6 opinionsText">
+                    <div id="carouselExample" class="carousel slide">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active subOpinionText">
+                                <h3>1- Many desktop publishing package and editors now use as their.</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of page when looking at its layout point of usinf is that is has more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making look like readable English. </p>
+                                <h4>Robert Johnson, <span> Software Enginee</span></h4>
+                            </div>
+                            <div class="carousel-item subOpinionText">
+                                <h3>2- Many desktop publishing package and editors now use as their.</h3>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of page when looking at its layout point of usinf is that is has more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making look like readable English. </p>
+                                <h4>Cathi Falcon, <span> Software Development</span> </h4>
+                            </div>
+                            <div class="carousel-item subOpinionText">
+                            <h3>3- Many desktop publishing package and editors now use as their.</h3>
+                            <p>It is a long established fact that a reader will be distracted by the readable content of page when looking at its layout point of usinf is that is has more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making look like readable English. </p>
+                            <h4>Jenelia Orkid, <span> Web Designer</span></h4>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev d-flex justify-content-end align-items-end btnPrev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next d-flex justify-content-end align-items-end" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </section>
+            </section>
+    </section>
+    
+    </article>   
+
+    <article id="myBlog">
+    <section class="myBlog sections" >
+        <section class="container-sm pricingTitles">
+            <div class="blogTitle">
+                <h2 class="title2"> Latest News </h2>
+                <p>Must explain to you how all this mistaken idea pleasure born and give you a complete account.</p>
+            </div>
+        </section>
+        <section class="container-sm">
+        <div class="container-sm">
+        <div class="row">
+            <div class="col-12m-auto">
+                <div class="owl-carousel owl-theme">
+
+                    <div class="item mb-4">
+                        <div class=" border-0 shadow cardCont">
+                            <div class="">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/blog/img-1.jpg" alt="" class=" ">
+                            </div>                            
+                            <div class="">
+                                <div class="blogNews">
+                                    <p class="myDateBlog">January 02,2022</p>
+                                    <h4>Have evolved over the years sometines accident.</h4>
+                                    <a href="#" class="postLink">→ Post Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="item">
+                        <div class=" border-0 shadow cardCont">
+                            <div class="">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/blog/img-2.jpg" alt="" class=" ">
+                            </div>
+                            <div class="">
+                                <div class="blogNews">
+                                    <p class="myDateBlog">January 03,2022</p>
+                                    <h4>The Internet tend to repeat prefefined chunks</h4>
+                                    <a href="#" class="postLink">→ Post Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class=" border-0 shadow cardCont">
+                            <div class="">
+                                <img src="https://wpocean.com/html/tf/elito-live/assets/images/blog/img-3.jpg" alt="" class=" ">
+                            </div>                         
+                               <div class="">
+                                <div class="blogNews">
+                                    <p class="myDateBlog">January 05,2022</p>
+                                    <h4>The standard chunk of used since the interested</h4>
+                                    <a href="#" class="postLink">→ Post Details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>                 
+
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+        </section>
+    </section>
+    </article>
+    <footer class="myFooter" id="myContact">
+        <article class="contactUs sections" >
+            <section class="subContact container">
+                <h2 class="h2Contact col-6">Send me a message and make something together.</h2>
+                <a href="mailto:agusinfcoiro@gmail.com" class="btnContact col-6">Contact Us &nbsp;&nbsp; →</a>
+            </section>
+        </article>
+
+        <div class="subFooter">
+            <div class="col-lg-4 footerLeft container-sm">
+                <a href="" class="footerLink"><img src="./img/logo.png" class="myLogo" alt="profile picture"><h4 class="myLogoText">&nbsp;&nbsp;Elito.</h4></a>
+                <p>Welcome and open yourself to your truest love this year with us! With the Release Process</p>
+                <div>
+                    <a href="https://www.facebook.com" class="redes" Target="_blank"><img class="redes" src="./img/redes/facebook.png" alt="facebook"></a>
+                    <a href="https://twitter.com/home?lang=es" class="redes" Target="_blank"><img class="redes" src="./img/redes/twitter.png" alt="twitter"></a>
+                    <a href="https://www.linkedin.com/in/agustinfcoiro/" class="redes" Target="_blank"><img class="redes" src="./img/redes/linkedin.png" alt="linkedin"></a>
+                    <a href="https://ar.pinterest.com/" class="redes" Target="_blank"><img class="redes" src="./img/redes/pinterest.png" alt="pinterest"></a>
+                    <a href="https://vimeo.com/" class="redes" Target="_blank"><img class="redes" src="./img/redes/vimeo.png" alt="vimeo"></a>
+                </div>
+            </div>
+            <div class="col-lg-8 footerMap container-sm">
+                <div class="col-lg-3 colMap">
+                    <h5>Navigation</h5>
+                    <ul>
+                        <li>-About us</li>
+                        <li>-Contact us</li>
+                        <li>-Video Guide</li>
+                        <li>-Recent Post</li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 colMap">
+                    <h5>All Services</h5>
+                    <ul>
+                        <li>-Web Design</li>
+                        <li>-Web Development</li>
+                        <li>-Brand Identity</li>
+                        <li>-Digital Marketing</li>
+                    </ul>
+                </div>
+                <div class="col-lg-6 colMap">
+                    <h5>Newsletter</h5>
+                    <p>Must explain to you how all this mistaken idea pleasure born and give you a complete account.</p>
+                    <form action="" class="myform">
+                        <input type="mail" placeholder="Email Address *" class="myInputMail" required=""><input type="submit" class="formEnvelope" value="✉">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <address class="myFooterAdd">Copyright © 2022 Elito. All rights reserved.</address>
+    </footer>
+
+    <div class="><a href="#myHome" class="arrow" >↑</a></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <script src="./js/services.js"></script>
+</body>
+</html>
+
+

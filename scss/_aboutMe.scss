@@ -1,0 +1,448 @@
+@import "var";
+
+.aboutMe{
+    background:
+     radial-gradient(circle at 25% center,$dark-2-color,$dark-1-color,$violet-2-color);
+     @include paddingX4($left:10px);
+     .subAboutMe{
+        @include displayFlex ($flxDir:column, $jtfCont:space-evenly ,$algnItm:flex-start);
+        .sec1{
+            position: relative;
+            .bigCard{
+                height: 350px;
+                width: 350px;
+                background-image: linear-gradient(180deg,$dark-23-color,$dark-2-color);
+                border-radius: 10px;
+                @include displayFlex($flxDir:column, $jtfCont:flex-start);
+                z-index:0;
+                .h3litCard{
+                    @include h2Title($clr:$secondary-color, $fntS:100px);
+                    padding-top:$titPadding;
+                }
+            }
+            .litCard{
+                @include cardProgram($degrees: 90deg);
+                width: 300px;
+                position: absolute;
+                top: 65%;
+                left: 60%;
+                z-index:1;
+            .h4litCard{
+                @include h2Title($clr:$primary-color, $fntS:40px);
+                }
+            }
+        }
+        .sec2{
+            width:100%;
+            padding-top:$titPadding;
+            display:flex;
+            flex-direction: column;
+            .contTitleAboutMe{
+                padding-bottom: $titPadding;
+                .title2{
+                    @include   h2Title;
+                    font-size: $tit500;
+                }
+            }
+            .skillsCont{
+                display: flex;
+                flex-direction: column;
+                .skillsSub{
+                    @include displayFlex($jtfCont:space-between);
+                    flex-wrap: wrap;
+                    margin-bottom: 30px;
+                    .myProg{
+                        width: 42.33%;
+                        height: 130px;
+                        margin: 0 15px 30px 15px;
+                        h5{
+                            color: $light-1-color;
+                            font-size: 35px;
+                            font-weight: 600;
+                        }
+                        p{
+                            font-size: 18px;
+                            font-weight: 500
+                        }
+                    }
+                    .mp1{
+                        @include cardProgram( 
+                            $clr1:$secondary-color, 
+                            $clr2:$secondary-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                    }
+                    
+                    .mp2{
+                        @include cardProgram( 
+                            $clr1:$primary-color, 
+                            $clr2:$primary-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                    }
+                    
+                    .mp3{
+                        @include cardProgram( 
+                            $clr1:$red-color, 
+                            $clr2:$red-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                    }
+                    
+                    .mp4{
+                        @include cardProgram( 
+                            $clr1:$orange-color, 
+                            $clr2:$orange-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                    }
+                    
+                    .mp5{
+                        @include cardProgram( 
+                            $clr1:$blue-color, 
+                            $clr2:$blue-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                    }
+                    
+                    .mp6{
+                        @include cardProgram( 
+                            $clr1:$violet-color, 
+                            $clr2:$violet-color, 
+                            $flxDir:column,
+                            $jtfCont: center);
+                        }
+                    }
+                }
+            }
+        }
+    }
+/*Work Experience */
+    .workExp{
+        background: radial-gradient(circle at center center, $red-color 0% , $dark-1-color 55%);
+        width:100%;
+        @include displayFlex ($flxDir:column,$jtfCont:space-evenly);
+        @include paddingX4;
+        .secExp1{
+            color: $light-1-color;
+            .title2{
+                @include h2Title;
+                font-size: $tit500;
+            }
+            p{
+                padding-bottom: $titPadding;
+            }
+            }
+        .secExp2{
+            @include displayFlex ($flxDir:column);
+            gap: 30px;
+            width: 100%;
+            height: 100%;
+            .work{
+                display:flex;
+                flex-wrap:wrap;
+                justify-content: flex-start;
+                align-items: center;
+                background-color: $dark-2-color;
+                border-radius: 10px;
+                color: $light-1-color;
+                width: 100%;
+                height: 180px;
+                text-align:start;
+                h3{
+                    font-weight: 600;
+                    font-size: 16px;
+                    margin-left: 25px;
+                }
+                img{
+                    width:90px;
+                    margin-top: 25px;
+                }
+                h4{
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-left: 25px;
+                }
+                p{
+                    color: $red-color;
+                    font-size: 14px;
+                    margin-left: 25px;
+                }
+                a{
+                    color: $light-1-color;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+
+/*Media Queries 540px to 768px*/
+@media only screen and (min-width: 540px){
+body{
+    .aboutMe{
+        background:
+         radial-gradient(circle at 25% center,$dark-2-color,$dark-1-color,$violet-2-color);
+         .subAboutMe{
+            @include displayFlex ($flxDir:column, $jtfCont:space-evenly ,$algnItm:flex-start);
+            .sec1{
+                position: relative;
+                .bigCard{
+                    height: 350px;
+                    width: 350px;
+                    background-image: linear-gradient(180deg,$dark-23-color,$dark-2-color);
+                    border-radius: 10px;
+                    @include displayFlex($flxDir:column, $jtfCont:flex-start);
+                    z-index:0;
+                    .h3litCard{
+                        @include h2Title($clr:$secondary-color, $fntS:100px);
+                        padding-top:$titPadding;
+                    }
+                }
+                .litCard{
+                    @include cardProgram($degrees: 90deg);
+                    width: 300px;
+                    position: absolute;
+                    top: 65%;
+                    left: 60%;
+                    z-index:1;
+                .h4litCard{
+                    @include h2Title($clr:$primary-color, $fntS:40px);
+                    }
+                }
+            }
+            .sec2{
+                .contTitleAboutMe{
+                    padding-bottom: $titPadding;
+                    .title2{
+                        @include h2Title($fntS:$tit700);
+                    }
+                }
+                .skillsCont{
+                    .skillsSub{
+                        .myProg{
+                            width: 25%;
+                            height: 130px;
+                            margin-bottom:30px ;
+                        }
+                        }
+                    }
+                }
+            }
+        }
+    /*Work Experience */
+    .workExp{
+        .secExp1{
+            .title2{
+                @include h2Title($fntS:$tit700);
+            }
+        }
+    }
+}
+}
+
+/*Media Queries 768px to 992px*/
+@media only screen and (min-width: 768px){
+body{
+    .aboutMe{
+        .subAboutMe{
+            .sec1{
+                .bigCard{
+                    .h3litCard{
+                        @include h2Title($clr:$secondary-color, $fntS:130px,$fntW:800);
+                    }
+                }
+                .litCard{
+                    top: 80%;
+                    left: 50%;
+                    .h4litCard{
+                        @include paddingX4( $top:25px, $bottom:25px);
+                    }        
+                }
+            }
+            .sec2{
+                padding-top:0;
+                .contTitleAboutMe{
+                    .title2{
+                        @include h2Title($fntS:$tit900); 
+                        padding-top:$titPadding;
+                    }
+                }
+            }
+        }
+}
+ /*Work Experience */
+ .workExp{
+    @include paddingX4($top:$titPadding80,$bottom:$titPadding80);
+    .secExp1{
+        .title2{
+            @include h2Title($fntS:$tit900);
+        }
+    }
+}
+}
+}
+
+/*Media Queries 992px por medidas de navbar de bootstrap en lg(large)*/
+@media only screen and (min-width: 992px){
+body{
+    .aboutMe{
+        @include paddingX4( $top:$titPadding, $bottom:0);
+         .subAboutMe{
+            @include displayFlex;
+            .sec1{
+                @include displayFlex($jtfCont:start);;
+                .bigCard{
+                    height: 450px;
+                    width: 350px;
+                    .h3litCard{
+                        @include h2Title($clr:$secondary-color, $fntS:130px,$fntW:800);
+                        padding-top:$titPadding;
+                    }
+                }
+                .litCard{
+                    width: 300px;
+                    top: 65%;
+                    left: 20%;
+                .h4litCard{
+                    @include h2Title($clr:$primary-color, $fntS:40px);
+                    }
+                }
+            }
+            .sec2{
+                width:100%;
+                .contTitleAboutMe{
+                    padding-bottom: $titPadding;
+                    .title2{
+                        @include h2Title($fntS:$tit900);
+                    }
+                }
+                .skillsCont{
+                    .skillsSub{
+                        @include displayFlex($jtfCont:space-between);
+                        flex-wrap: wrap;
+                        margin-bottom:0;
+                        width:100%;
+                        .myProg{
+                            width: 130px;
+                            height: 130px;
+                            margin: 0 10px 30px 0px;
+                        }                   
+                        }
+                    }
+                }
+            }
+        }
+        /*Work Experience */
+            .workExp{
+                @include displayFlex ($flxDir:column);
+                @include paddingX4($top:$titPadding90, $bottom:$titPadding90);
+                text-align:center;
+                .secExp1{
+                    width: 50%;
+                    .title2{
+                        @include h2Title ($fntS:$tit900);
+                    }
+                    }
+                .secExp2{
+                    @include displayFlex ($flxDir:column);
+                    gap: 30px;
+                    width: 100%;
+                    height: 100%;
+                    .work{
+                        @include displayFlex ($jtfCont:space-around);
+                        background-color: $dark-2-color;
+                        border-radius: 10px;
+                        color: $light-1-color;
+                        width: 100%;
+                        height: 120px;
+                        h3{
+                            font-weight: 600;
+                            font-size: 35px;
+                        }
+                        img{
+                            width:90px;
+                        }
+                        p{
+                            color: $red-color;
+                            font-size: 15px;
+                        }
+                        a{
+                            color: $light-1-color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+}
+}
+
+ /*Media Queries 1200px*/
+@media (min-width: 1200px ) {
+    body{
+    .aboutMe{   
+         .subAboutMe{
+            @include displayFlex ($jtfCont:space-around);
+            height: 100vh;
+            .sec1{
+                .bigCard{
+                    width: 60%;
+                    height:450px;
+                }
+                .litCard{
+                    top:65%;
+                    left:30%;
+                }
+            }
+            .sec2{
+                .title2{
+                    @include   h2Title;
+                }
+                .skillsCont{
+                    .skillsSub{
+
+                        .myProg{
+                            width: 180px;
+                            height: 180px;
+                            margin: 20px auto;
+                        }                     
+                        }
+                    }
+                }
+            }
+        }
+    /*Work Experience */
+        .workExp{
+            .secExp1{
+                }
+            .secExp2{
+                @include displayFlex ($flxDir:column);
+                gap: 30px;
+                width: 100%;
+                height: 100%;
+                .work{
+                    @include displayFlex ($jtfCont:space-around);
+                    background-color: $dark-2-color;
+                    border-radius: 10px;
+                    color: $light-1-color;
+                    width: 100%;
+                    height: 120px;
+                    h3{
+                        font-weight: 600;
+                        font-size: 35px;
+                    }
+                    img{
+                        width:90px;
+                    }
+                    p{
+                        color: $red-color;
+                        font-size: 15px;
+                    }
+                    a{
+                        color: $light-1-color;
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+}
+}

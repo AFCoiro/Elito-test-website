@@ -1,0 +1,132 @@
+/*VARIABLES DE COLOR*/
+
+$primary-color: #59c378;
+$primary-color-icon: invert(71%) sepia(21%) saturate(918%) hue-rotate(85deg) brightness(90%) contrast(92%);
+
+$primary-hover: #41b362;
+
+$secondary-color-icon: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
+$secondary-color: #ffe600;
+
+$secondary-hover: #ffe203;
+$secondaryT-1-color: #ac8a137e;
+
+$red-color: #dd503c;
+$orange-color: #a2650d;
+$blue-color: #126dae;
+$violet-color: #730bb0;
+$violet-2-color: #49086e;
+
+$light-1-color: #f1f1f1;
+$light-1-color-icon:
+ invert(100%) 
+sepia(0%) 
+saturate(4360%) 
+hue-rotate(33deg)
+ brightness(123%)
+  contrast(89%);
+$light-2-color-icon:
+brightness(0)
+saturate(100%)
+invert(98%)
+sepia(100%)
+saturate(8%)
+hue-rotate(118deg) 
+brightness(102%)
+contrast(102%);
+$light-transparent:#00000000;
+
+$dark-1-color: #242424;
+$dark-2-color: #27292d;
+$dark-23-color: #414141;
+$dark-3-color: #555555;
+$dark-4-color: #aaaaaa;
+
+$darkT-1-color: #2424246c;
+ 
+/*TIME in Transition*/
+$timeTr : 0.4s;
+/*Título para hasta 540*/
+$tit500: 24px;
+/*Título para hasta 768*/
+$tit700: 34px;
+/*Título para hasta 992*/
+$tit900: 45px;
+/*padding de titulo*/
+$titPadding: 60px;
+/*padding de secciones*/
+$titPadding80: 80px;
+/*padding de secciones grande*/
+$titPadding90: 90px;
+/*MIXINS*/
+
+@mixin displayFlex ($flxDir:row, $jtfCont:center,$algnItm:center){
+    display: flex;
+    flex-direction: $flxDir;
+    justify-content: $jtfCont;
+    align-items: $algnItm;
+}
+
+@mixin bnt1($bgr: $primary-color, $bgrH:$primary-hover,
+                $bdr:$primary-color,  $bdrH:$primary-color,
+                $clr:$light-1-color,  $clrH:$light-1-color,$padding:15px 25px, $fntS:17px,$fntW:500) {
+    background-color: $bgr;
+    color: $clr;
+    border: 1px solid $bdr;
+    font-weight: $fntW;
+    font-size: $fntS;
+    border-radius: 40px;
+    padding:$padding;
+    transition: $timeTr;
+    &:hover{
+        background-color: $primary-hover;
+        color: $clr;
+        border: 1px solid $bdr;
+    }
+  }
+
+  @mixin h2Title($clr:$light-1-color, $fntS:50px,$fntW:600){
+    color: $clr;
+    font-size: $fntS;
+    font-weight: $fntW;
+  }
+
+  @mixin cardProgram(   $degrees: 180deg, 
+                        $clr1:$dark-4-color, 
+                        $clr2:$light-1-color, 
+                        $flxDir:row,
+                        $jtfCont: space-around) {
+
+        border-radius: 10px;
+        border: double 3px transparent;
+        background-image: linear-gradient($degrees, $dark-1-color,$dark-1-color),
+                          linear-gradient($degrees, $clr1, $darkT-1-color);
+        background-origin: border-box;
+        background-clip: content-box,border-box;
+        @include displayFlex ($flxDir:$flxDir, $jtfCont:$jtfCont, $algnItm:center);
+        p{
+            color: $clr2;
+        }
+  }
+
+  @mixin myOwlCar($width:40px,$height:40px){
+    background-color: $dark-1-color !important;
+    width: $width;
+    height: $height;
+    border: 1px solid $primary-color !important;
+    border-radius: 50% !important;
+    transition: $timeTr;
+    span{
+        color: $primary-color;
+    }
+    &:hover{
+        background-color: $primary-hover !important;
+        span{
+            color: $light-1-color;  
+        }
+    }
+  }
+
+  @mixin paddingX4( $top:$titPadding, $right:0px, $bottom:$titPadding, $left:0px ){
+    padding: $top $right $bottom $left;
+  }

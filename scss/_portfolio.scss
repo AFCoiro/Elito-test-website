@@ -1,0 +1,246 @@
+@import "var";
+
+/*portfolio*/
+
+.portfolio2{
+    .port2title{
+        @include displayFlex ($flxDir:column, $jtfCont:space-between);
+        text-align:center;
+        padding-top: 80px;
+        .title2{
+            @include h2Title;
+            font-size: $tit500;
+        }
+        .port2TitleImg{
+            width: fit-content;
+            background-color: $dark-3-color;
+            border-radius: 50%;
+            padding: 30px;
+            border: $dark-2-color solid 10px;
+            outline: $dark-3-color 2px dashed;
+            .workIcon{
+                width: 60px;
+                filter: $secondary-color-icon;
+            }
+        }
+    }
+    .cardCont{
+        @include displayFlex ($flxDir:column, $algnItm:center);
+        text-align:center;
+        padding-top: 50px;
+        .contImg{
+            overflow: hidden;
+            .imgCar {
+                height: 400px;
+                width: auto;
+                transition: transform $timeTr; 
+                &:hover{
+                    transform: scale(1.2);
+                }
+            }
+        }
+        .myCardPort{
+            color: $light-1-color;
+            padding-top: 30px;
+            h4{
+                font-weight: 600;
+            }
+             p{
+                font-size: 15px;
+                padding-top: 10px;
+            }
+        }
+    }
+
+    /*clases del carrousel*/
+
+    .owl-carousel .owl-nav.disabled {
+        display:block;
+    }
+    .owl-nav button{
+        @include myOwlCar;
+    }
+
+}
+
+/*Opinion*/
+
+.opinionBackground{
+    background: radial-gradient(circle at 50% 70% , $secondaryT-1-color 0%, $dark-1-color 40%);
+    padding: 150px 0 $titPadding 0;
+    @include paddingX4( $top:150px);
+     .opinions{
+        text-align:center;
+        @include displayFlex($flxDir:column, $algnItm:center, $jtfCont:space-between);
+        color: $light-1-color;
+        .opinionImg{
+            width: 30%;
+            border-radius: 50%;
+            box-shadow:
+            0 0 0 10px $dark-1-color,
+            0 0 0 12px $dark-4-color,
+            0 0 0 24px $dark-1-color,
+            0 0 0 26px $dark-3-color,
+            0 0 0 38px $dark-1-color,
+            0 0 0 40px $dark-2-color,
+            0 0 0 52px $dark-1-color,
+            0 0 0 54px $dark-2-color;
+            margin-bottom: 90px;
+            .imgopion{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        .opinionsText{
+            .subOpinionText{
+                h3{
+                    font-weight: 600;
+                }
+                p{
+                    font-size: 16px;
+                }
+                h4{
+                    font-weight: 600; 
+                    span{
+                        font-weight: 500;
+                        font-size: 14px;
+                    }
+                }
+            }
+            .btnPrev{
+                width: 90%;
+            }
+        }
+
+    }
+}
+
+/*Media Queries 540px to 768px*/
+
+@media only screen and (min-width: 540px){
+body{
+    #myPortfolio{
+        .portfolio2{
+            .title2{
+                @include h2Title($fntS:$tit700);
+            }
+            .cardCont{
+                .contImg{
+                    .imgCar {
+                        height: 100% !important;
+                        width: 100% !important;
+                    }
+                }
+            }
+        }
+
+        .opinionBackground{
+            .opinions{
+               .opinionImg{
+                   width: 50%;
+               }
+           }
+       }  
+}
+}
+}
+
+
+/*Media Queries 768px*/
+
+@media only screen and (min-width: 768px){
+
+}
+
+/*Media Queries 992px*/
+@media (min-width: 992px ) {
+    body{
+        .portfolio2{
+            height: 100vh;
+            .port2title{
+                @include displayFlex ($jtfCont:space-between);
+                .title2{
+                    @include h2Title;
+                }
+                .port2TitleImg{
+                    width: fit-content;
+                    background-color: $dark-3-color;
+                    border-radius: 50%;
+                    padding: 30px;
+                    border: $dark-2-color solid 10px;
+                    outline: $dark-3-color 2px dashed;
+                    .workIcon{
+                        width: 60px;
+                        filter: $secondary-color-icon;
+                    }
+                }
+            }
+            .contImg{
+                overflow: hidden;
+                .imgCar {
+                    height: 400px;
+                    width: auto;
+                    transition: transform $timeTr; 
+                    &:hover{
+                        transform: scale(1.2);
+                    }
+                }
+            }
+            .myCardPort{
+                color: $light-1-color;
+                padding-top: 30px;
+                h4{
+                    font-weight: 600;
+                }
+                 p{
+                    font-size: 15px;
+                    padding-top: 10px;
+                }
+            }
+            /*clases del carrousel*/
+        
+            .owl-carousel .owl-nav.disabled {
+                display:block;
+            }
+            .owl-nav button{
+                @include myOwlCar;
+            }
+        
+        }
+        
+        /*Opinion*/
+        
+        .opinionBackground{
+            background-image:url("../img/bg-quotes.jpg");
+            background-repeat: no-repeat;
+             height: 100vh;
+             width: 100%;
+             .opinions{
+                height: 100vh;
+                @include displayFlex;
+                color: $light-1-color;
+                .opinionImg{
+                    .imgopion{
+                        width:60%;
+
+                    }
+                }
+                .opinionText{
+                    h3{
+                        font-weight: 600;
+                    }
+                    p{
+                        font-size: 16px;
+                    }
+                    h4{
+                        font-weight: 600; 
+                        span{
+                            font-weight: 500;
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+        }        
+    }
+}
