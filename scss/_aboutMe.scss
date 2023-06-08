@@ -11,7 +11,7 @@
             .bigCard{
                 height: 350px;
                 width: 350px;
-                background-image: linear-gradient(180deg,$dark-23-color,$dark-2-color);
+                background-image: linear-gradient(180deg,$dark-4-color,$dark-2-color);
                 border-radius: 10px;
                 @include displayFlex($flxDir:column, $jtfCont:flex-start);
                 z-index:0;
@@ -55,15 +55,20 @@
                         width: 42.33%;
                         height: 130px;
                         margin: 0 15px 30px 15px;
-                        h5{
-                            color: $light-1-color;
-                            font-size: 35px;
-                            font-weight: 600;
-                        }
                         p{
                             font-size: 18px;
                             font-weight: 500
                         }
+                        .myProgSub{
+                            display:flex;
+                            flex-direction: row;
+                            h5{
+                                color: $light-1-color;
+                                font-size: 35px;
+                                font-weight: 600;
+                            }
+                        }
+
                     }
                     .mp1{
                         @include cardProgram( 
@@ -122,7 +127,7 @@
         background: radial-gradient(circle at center center, $red-color 0% , $dark-1-color 55%);
         width:100%;
         @include displayFlex ($flxDir:column,$jtfCont:space-evenly);
-        @include paddingX4;
+        @include paddingx2;
         .secExp1{
             color: $light-1-color;
             .title2{
@@ -139,10 +144,8 @@
             width: 100%;
             height: 100%;
             .work{
-                display:flex;
+                @include displayFlex ($jtfCont:flex-start);
                 flex-wrap:wrap;
-                justify-content: flex-start;
-                align-items: center;
                 background-color: $dark-2-color;
                 border-radius: 10px;
                 color: $light-1-color;
@@ -189,7 +192,7 @@ body{
                 .bigCard{
                     height: 350px;
                     width: 350px;
-                    background-image: linear-gradient(180deg,$dark-23-color,$dark-2-color);
+                    background-image: linear-gradient(180deg,$dark-4-color,$dark-2-color);
                     border-radius: 10px;
                     @include displayFlex($flxDir:column, $jtfCont:flex-start);
                     z-index:0;
@@ -255,7 +258,7 @@ body{
                     top: 80%;
                     left: 50%;
                     .h4litCard{
-                        @include paddingX4( $top:25px, $bottom:25px);
+                        @include paddingx2($height:25px);
                     }        
                 }
             }
@@ -272,21 +275,21 @@ body{
 }
  /*Work Experience */
  .workExp{
-    @include paddingX4($top:$titPadding80,$bottom:$titPadding80);
+    @include paddingx2($height:$titPadding80);
     .secExp1{
         .title2{
             @include h2Title($fntS:$tit900);
         }
     }
 }
-}
+} 
 }
 
 /*Media Queries 992px por medidas de navbar de bootstrap en lg(large)*/
 @media only screen and (min-width: 992px){
 body{
     .aboutMe{
-        @include paddingX4( $top:$titPadding, $bottom:0);
+        @include paddingX4( $top:$titPadding, $bottom:$titPadding);
          .subAboutMe{
             @include displayFlex;
             .sec1{
@@ -335,7 +338,7 @@ body{
         /*Work Experience */
             .workExp{
                 @include displayFlex ($flxDir:column);
-                @include paddingX4($top:$titPadding90, $bottom:$titPadding90);
+                @include paddingx2($height:$titPadding90);
                 text-align:center;
                 .secExp1{
                     width: 50%;
@@ -360,6 +363,7 @@ body{
                             font-size: 35px;
                         }
                         img{
+                            margin-top: 0px;
                             width:90px;
                         }
                         p{
@@ -379,10 +383,9 @@ body{
  /*Media Queries 1200px*/
 @media (min-width: 1200px ) {
     body{
-    .aboutMe{   
+    .aboutMe{  
          .subAboutMe{
             @include displayFlex ($jtfCont:space-around);
-            height: 100vh;
             .sec1{
                 .bigCard{
                     width: 60%;
@@ -412,8 +415,6 @@ body{
         }
     /*Work Experience */
         .workExp{
-            .secExp1{
-                }
             .secExp2{
                 @include displayFlex ($flxDir:column);
                 gap: 30px;
@@ -426,11 +427,13 @@ body{
                     color: $light-1-color;
                     width: 100%;
                     height: 120px;
+                    margin-top: 0px;
                     h3{
                         font-weight: 600;
                         font-size: 35px;
                     }
                     img{
+                        margin-top: 0px;
                         width:90px;
                     }
                     p{

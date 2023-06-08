@@ -5,11 +5,11 @@
     width: 100%;
     padding-bottom:$titPadding;
     @include displayFlex ($flxDir:column);
-    padding-top: 100px;
     .blogTitle{
         text-align: center;
+        padding-bottom:$titPadding;
         .title2{
-            @include h2Title;
+            @include  h2Title($fntS:$tit500);
         }
     }
     .owl-carousel .owl-nav.disabled {
@@ -19,7 +19,7 @@
         @include myOwlCar;
         }
     }
-    .blogNews{
+.blogNews{
         color: $light-1-color;
         width: 100%;
         @include displayFlex ($flxDir:column,$algnItm:flex-start);
@@ -45,25 +45,38 @@
 /*Media Queries 540px to 768px*/
 
 @media only screen and (min-width: 540px){
-
-}
-
-/*Media Queries 1200px*/
-
-@media (min-width: 1200px ) {
-    body{
+body{
     .myBlog{
-        background-color: $dark-1-color;
-        height: 100vh;
-        width: 100%;
         @include displayFlex ($flxDir:column);
-        padding-top: 100px;
         .blogTitle{
-            text-align: center;
+            @include paddingx2;
             .title2{
-                @include h2Title;
+                @include h2Title($fntS:$tit700);
             }
         }
+    }
+}
+}
+
+/*Media Queries 992px*/
+
+@media (min-width: 992px ) {
+    body{
+    .myBlog{
+        @include paddingx2;
+        width:100%;
+        @include displayFlex ($flxDir:column);
+        .pricingTitles{
+            @include displayFlex;
+            .blogTitle{
+                text-align: center;
+                width:50%;
+                .title2{
+                    @include h2Title($fntS:$tit900);
+                }
+            }
+        }
+
         .owl-carousel .owl-nav.disabled {
             display:block;
         }
@@ -72,7 +85,6 @@
             }
         }
         .blogNews{
-            color: $light-1-color;
             width: 100%;
             @include displayFlex ($flxDir:column,$algnItm:flex-start);
             h4{

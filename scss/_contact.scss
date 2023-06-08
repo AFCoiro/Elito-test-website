@@ -4,7 +4,7 @@
     display:none;
 }
 
-@media (min-width: 1024px ) {
+@media (min-width: 992px ) {
     body{
     .myFooter{
         .contactUs{
@@ -48,7 +48,6 @@
             .subContact{
                 width: 100%;
                 @include displayFlex ($jtfCont:space-around);
-                padding-top: 80px;
                 .h2Contact{
                     @include h2Title;
                 }

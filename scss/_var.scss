@@ -25,6 +25,7 @@ saturate(4360%)
 hue-rotate(33deg)
  brightness(123%)
   contrast(89%);
+
 $light-2-color-icon:
 brightness(0)
 saturate(100%)
@@ -34,13 +35,17 @@ saturate(8%)
 hue-rotate(118deg) 
 brightness(102%)
 contrast(102%);
+
 $light-transparent:#00000000;
 
+$dark-color:black;
+$dark-0-color: #232221;
 $dark-1-color: #242424;
 $dark-2-color: #27292d;
-$dark-23-color: #414141;
-$dark-3-color: #555555;
-$dark-4-color: #aaaaaa;
+$dark-3-color: #373737;
+$dark-4-color: #414141;
+
+$dark-grey-color: #aaaaaa;
 
 $darkT-1-color: #2424246c;
  
@@ -64,24 +69,24 @@ $titPadding90: 90px;
     display: flex;
     flex-direction: $flxDir;
     justify-content: $jtfCont;
-    align-items: $algnItm;
+    align-items: $algnItm; 
 }
 
 @mixin bnt1($bgr: $primary-color, $bgrH:$primary-hover,
-                $bdr:$primary-color,  $bdrH:$primary-color,
-                $clr:$light-1-color,  $clrH:$light-1-color,$padding:15px 25px, $fntS:17px,$fntW:500) {
+                $bdr:$primary-color,  $bdrH:$primary-color,$timeTrans:$timeTr,
+                $bdr-rd:40px,$clr:$light-1-color,  $clrH:$light-1-color,$padding:15px 25px, $fntS:17px,$fntW:500,$bdrpx:1px) {
     background-color: $bgr;
     color: $clr;
-    border: 1px solid $bdr;
+    border: $bdrpx solid $bdr;
     font-weight: $fntW;
     font-size: $fntS;
-    border-radius: 40px;
+    border-radius: $bdr-rd;
     padding:$padding;
-    transition: $timeTr;
+    transition: $timeTrans;
     &:hover{
-        background-color: $primary-hover;
-        color: $clr;
-        border: 1px solid $bdr;
+        background-color: $bgrH;
+        color: $clrH;
+        border: $bdrpx solid $bdr;
     }
   }
 
@@ -92,7 +97,7 @@ $titPadding90: 90px;
   }
 
   @mixin cardProgram(   $degrees: 180deg, 
-                        $clr1:$dark-4-color, 
+                        $clr1:$dark-grey-color, 
                         $clr2:$light-1-color, 
                         $flxDir:row,
                         $jtfCont: space-around) {
@@ -126,7 +131,9 @@ $titPadding90: 90px;
         }
     }
   }
-
+  @mixin paddingx2($height:$titPadding,$width:0){
+    padding: $height $width;
+  }
   @mixin paddingX4( $top:$titPadding, $right:0px, $bottom:$titPadding, $left:0px ){
     padding: $top $right $bottom $left;
   }

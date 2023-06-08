@@ -2,28 +2,27 @@
 
 .myServ{ 
     width: 100%;
-    padding: $titPadding 0 $titPadding 0;
+    @include paddingx2;
     @include displayFlex ($flxDir:column);
     .subArt1{
         @include displayFlex ($flxDir:column);
         text-align: center;
         .title2{
-            @include   h2Title;
-            font-size: $tit500;
+            @include  h2Title($fntS:$tit500);
         }
         .secciones1{
             @include displayFlex;
             gap: 30px;
             width: 100%;
-            padding: $titPadding 0 $titPadding 0;
+            @include paddingx2;
             .btnSec{
-                width: 120px;
-                background-color: $dark-3-color;
-                padding: 15px 25px 15px 25px;
-                border-radius: 50px;
-                font-weight: 600;
-                font-size: 14px;
-                text-align: center;
+                width: 27%;
+                @include bnt1($bgr: $dark-3-color, $bgrH:$dark-1-color,
+                $bdr:$dark-3-color,$bdrpx:3px,$clr:$light-1-color, 
+                 $clrH:$light-1-color,
+                  $fntS:14px,$fntW:600,
+                  $padding:8px 0,
+                  $timeTrans:0s);
                 a{
                     color: $light-1-color;
                 }
@@ -45,9 +44,10 @@
         .myCards{
             @include displayFlex ($flxDir:column, $jtfCont:space-between);
             border: $dark-3-color solid 2px;
+            background-color: $dark-0-color;
             border-radius: 10px;
-            width: 350px;
-            height: 350px;
+            width: 55%;
+            height:380px;
             padding: 20px;
             text-align: center;
             h3{
@@ -85,7 +85,7 @@
             font-size: $tit500;
         }
     }
-    .planes{
+    .planes{  
         @include displayFlex ($flxDir:column, $jtfCont:space-evenly);
         gap: 20px;
         li{
@@ -125,17 +125,13 @@
                 }
             }
             .planBtn{
-                color: $primary-color;
-                font-weight: 600;
-                border: $primary-color solid 1px;
+                @include bnt1($bgr: $dark-2-color,$padding:8px 28px,$fntW:600,$bdr-rd:0);
                 width: fit-content;
-                padding: 8px 28px;
                 margin-bottom: 50px;
-                transition: $timeTr;
-                &:hover{
-                    background-color: $primary-hover;
-                    color: $light-1-color;
-                }
+            }
+            .planBtnAct{
+                background-color: $primary-color;
+                color: $light-1-color !important;
             }
         }
     }
@@ -160,32 +156,68 @@
                     }
             }
         }
+    }
 }
-/*Media Queries 1200px*/
-
-@media (min-width: 1200px ) {
+/*Media Queries 768px to 992px*/
+@media only screen and (min-width: 768px){
     body{
         .myServ{ 
-            /* background: radial-gradient(circle at 15% -5%, $secondary-hover 0,8% , $dark-1-color 35%);*/
-            height: 100vh;
+            padding-bottom: $titPadding80;
+            .subArt1{
+                .title2{
+                @include h2Title($fntS:$tit900);
+                }
+                .secciones1{
+                    .btnSec{
+                        @include bnt1($bgr: $dark-3-color, $bgrH:$dark-1-color,
+                        $bdr:$dark-3-color,$bdrpx:3px,$clr:$light-1-color, 
+                         $clrH:$light-1-color,
+                          $fntS:18px); 
+                    }
+                    .btnactivo{
+                        border: $dark-3-color solid 3px;
+                        background-color: $light-transparent;
+                        a{
+                            color: $secondary-color;
+                        }
+                        
+                    }
+                }
+            }
+        }
+        .pricing{
+            padding-bottom: $titPadding80;
+            .pricingTitles{
+                .title2{
+                    @include h2Title($fntS:$tit900);
+                    }
+            }
+        }   
+    }
+}
+
+/*Media Queries 992px to 1200px*/
+@media only screen and (min-width: 992px){
+body{
+        .myServ{ 
             width: 100%;
-            padding: 130px 0 130px 0;
+            @include paddingx2( $height:$titPadding90);
             @include displayFlex ($flxDir:column);
             .subArt1{
                 @include displayFlex ($flxDir:column);
                 text-align: center;
                 .title2{
-                    @include   h2Title;
-                    font-size: $tit500;
+                    @include h2Title($fntS:$tit900);
                 }
                 .secciones1{
                     @include displayFlex;
                     gap: 30px;
                     width: 100%;
-                    padding: 50px 0 50px 0;
+                    @include paddingx2($height:50px);
                     .btnSec{
                         width: 200px;
                         background-color: $dark-3-color;
+                        @include paddingx2($height:15px);
                         padding: 15px 25px 15px 25px;
                         border-radius: 50px;
                         font-weight: 600;
@@ -210,7 +242,6 @@
                 width: 100%;
                 .myCards{
                     width: 100%;
-                    @include displayFlex ($flxDir:column, $jtfCont:space-evenly);
                     border: $dark-3-color solid 2px;
                     border-radius: 10px;
                     width: 400px;
@@ -233,24 +264,18 @@
                 }
             }
         }
-        
+    }
         /*pricing*/
         
         .pricing{
-            background: radial-gradient(circle at center center, $secondary-hover 0% , $dark-1-color 35%);
-            width: 100%;
-            height: 100vh;
+            @include paddingx2($height:$titPadding90);
             text-align: center;
             @include displayFlex ($flxDir:column);
             .pricingTitles{
-                width: 35%;
+                width: 50%;
                 p{
                     padding-top: 15px;
-                    padding-bottom: 40px;
-                }
-                .title2{
-                    @include h2Title;
-                    font-size: $tit500;
+                    padding-bottom: 80px;
                 }
             }
             .planes{
@@ -305,7 +330,88 @@
             }
          
         }
-        
     }
-}
-}
+
+
+/*Media Queries 1200px*/
+/*@media (min-width: 1200px ) {
+    body{
+        .myServ{ 
+            
+            .subArt1{
+               
+                .title2{
+
+                }
+                .secciones1{
+
+                    .btnSec{
+                        
+                        a{
+                        }
+                    }
+                    .btnactivo{
+                       
+                        a{
+                        }
+                        
+                    }
+                }
+            }
+            .subArt2{
+               
+                .myCards{
+                   
+                    h3{
+                      
+                    }
+                    .divImgArt{
+                        
+                    }
+                    .imgArt{
+                       
+                    }
+                }
+            }
+        }
+        
+
+        
+        .pricing{
+            
+            .pricingTitles{
+                p{
+                }
+                .title2{
+                }
+            }
+            .planes{
+                li{
+                }
+                .plan{
+
+                    h4{
+                    }
+                    p{
+
+                    }
+                    ul{
+                    }
+                    .planType{
+                       
+                        .mySpan{
+                           
+                        }
+                    }
+                    .planBtn{
+                       
+                        }
+                    }
+                }
+            }
+         
+        }
+        
+    }*/ 
+
+

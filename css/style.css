@@ -55,7 +55,7 @@ body .myHeader .myContNav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 30px 10px 30px;
+  padding: 10px 0px;
 }
 body .myHeader .myContNav .myOffCanvas {
   background-color: #242424;
@@ -67,6 +67,8 @@ body .myHeader .myContNav .myOffCanvas .myBtnClose {
 body .myHeader .myContNav .myButton {
   order: -1;
   background-color: #59c378;
+  border-radius: 0px;
+  height: 50px;
 }
 body .myHeader .myContNav .myButton span {
   filter: invert(100%) sepia(0%) saturate(4360%) hue-rotate(33deg) brightness(123%) contrast(89%);
@@ -101,7 +103,7 @@ body .myHeader .myNavRight .btnCv {
   font-weight: 500;
   font-size: 17px;
   border-radius: 40px;
-  padding: 10px 14px;
+  padding: 14px 20px;
   transition: 0.4s;
 }
 body .myHeader .myNavRight .btnCv:hover {
@@ -152,7 +154,7 @@ body .myMain .profileSection .profileText .btnMain {
   font-weight: 500;
   font-size: 17px;
   border-radius: 40px;
-  padding: 10px 14px;
+  padding: 14px 20px;
   transition: 0.4s;
 }
 body .myMain .profileSection .profileText .btnMain:hover {
@@ -186,6 +188,10 @@ body .myMain .profileSection .secImgProf .iconProf2 {
 body .myMain .profileSection .secImgProf .iconProf3 {
   top: 75%;
   right: 0%;
+}
+body .myMain .profileSection .secImgProf .iconProf4 {
+  top: 75%;
+  right: 70%;
 }
 body .myFooter {
   background-color: #242424;
@@ -254,6 +260,9 @@ body .myFooter .footerMap .colMap ul {
   justify-content: space-between;
   align-items: flex-start;
 }
+body .myFooter .footerMap .colMap ul a {
+  color: #f1f1f1;
+}
 body .myFooter .footerMap .colMap .myform {
   display: flex;
   flex-direction: row;
@@ -263,7 +272,7 @@ body .myFooter .footerMap .colMap .myform .myInputMail {
   border: #27292d solid 1px;
   color: #f1f1f1;
   padding: 10px;
-  border-radius: 10px 0 0 10px;
+  border-radius: 5px 0 0 5px;
 }
 body .myFooter .footerMap .colMap .myform:focus {
   outline: none;
@@ -273,7 +282,7 @@ body .myFooter .footerMap .colMap .myform .formEnvelope {
   border: #27292d solid 1px;
   font-size: 30px;
   color: #f1f1f1;
-  border-radius: 0 10px 10px 0;
+  border-radius: 0 5px 5px 0;
 }
 body .myFooter .myFooterAdd {
   font-weight: 400;
@@ -316,7 +325,7 @@ body .contentArrow .arrow:hover {
     font-weight: 700;
     font-size: 17px;
     border-radius: 40px;
-    padding: 15px 25px;
+    padding: 16px 30px;
     transition: 0.4s;
   }
   body .myHeader .myNavRight .btnCv:hover {
@@ -336,7 +345,7 @@ body .contentArrow .arrow:hover {
     font-weight: 700;
     font-size: 17px;
     border-radius: 40px;
-    padding: 15px 18px;
+    padding: 16px 30px;
     transition: 0.4s;
   }
   body .myMain .profileSection .profileText .btnMain:hover {
@@ -374,6 +383,9 @@ body .contentArrow .arrow:hover {
   body .myMain .profileSection .secImgProf .iconProf3 {
     right: -10%;
   }
+  body .myMain .profileSection .secImgProf .iconProf4 {
+    right: 80%;
+  }
 }
 /*Media Queries 992px por medidas de navbar de bootstrap en lg(large)*/
 @media only screen and (min-width: 992px) {
@@ -382,7 +394,7 @@ body .contentArrow .arrow:hover {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 10px 30px 10px 30px;
+    padding: 10px 30px;
   }
   body .myHeader .myContNav .myButton {
     order: 0;
@@ -463,6 +475,98 @@ body .contentArrow .arrow:hover {
     top: 75%;
     right: 10%;
   }
+  body .myMain .profileSection .secImgProf .iconProf4 {
+    top: 75%;
+    right: 65%;
+  }
+  body .myFooter {
+    background-color: #242424;
+    color: #f1f1f1;
+    font-size: 16px;
+  }
+  body .myFooter p {
+    font-size: 16px;
+  }
+  body .myFooter .subFooter {
+    background: radial-gradient(circle at 70% 30%, #59c378 0%, #242424 40%);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #27292d 2px solid;
+  }
+  body .myFooter .subFooter .footerLeft {
+    border-right: #27292d 2px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 10px;
+    height: 80%;
+    width: 30%;
+  }
+  body .myFooter .subFooter .footerLeft .footerLink {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myFooter .subFooter .footerLeft .footerLink .myLogoText {
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  body .myFooter .subFooter .footerLeft .redes {
+    width: 25px;
+    padding-right: 5px;
+    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(8%) hue-rotate(118deg) brightness(102%) contrast(102%);
+  }
+  body .myFooter .footerMap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: start;
+  }
+  body .myFooter .footerMap .colMap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 15px;
+    width: 25%;
+  }
+  body .myFooter .footerMap .colMap li {
+    padding-bottom: 15px;
+  }
+  body .myFooter .footerMap .colMap .myform {
+    display: flex;
+    flex-direction: row;
+  }
+  body .myFooter .footerMap .colMap .myform .myInputMail {
+    background-color: #27292d;
+    border: #27292d solid 1px;
+    color: #f1f1f1;
+    padding: 10px;
+    width: 80%;
+  }
+  body .myFooter .footerMap .colMap .myform:focus {
+    outline: none;
+  }
+  body .myFooter .footerMap .colMap .myform .formEnvelope {
+    background-color: #27292d;
+    border: #27292d solid 1px;
+    font-size: 30px;
+    color: #f1f1f1;
+  }
+  body .myFooter .footerMap .colMapMail {
+    width: 35%;
+  }
+  body .myFooter .myFooterAdd {
+    font-weight: 400;
+    text-align: center;
+    padding: 30px;
+    height: 50px;
+  }
 }
 /*Media Queries < 1200px*/
 @media (min-width: 1200px) {
@@ -476,7 +580,7 @@ body .contentArrow .arrow:hover {
   }
   body .myHeader .myContNav {
     order: 0;
-    padding: 10px 0px 10px 0px;
+    padding: 10px 30px;
   }
   body .myHeader .myContNav .myNavbar {
     display: flex;
@@ -572,7 +676,7 @@ body .contentArrow .arrow:hover {
     width: 95%;
   }
   body .myMain .profileSection .secImgProf .floatIcon {
-    width: 17%;
+    width: 20%;
     border: #f1f1f1 solid 20px;
   }
   body .myMain .profileSection .secImgProf .iconProf1 {
@@ -587,100 +691,16 @@ body .contentArrow .arrow:hover {
     top: 85%;
     right: 0%;
   }
-  body .myFooter {
-    background-color: #242424;
-    color: #f1f1f1;
-    font-size: 16px;
-  }
-  body .myFooter p {
-    font-size: 16px;
-  }
-  body .myFooter .subFooter {
-    height: 60vh;
-    background: radial-gradient(circle at 70% 30%, #59c378 0%, #242424 40%);
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: #27292d 2px solid;
-  }
-  body .myFooter .subFooter .footerLeft {
-    border-right: #27292d 2px solid;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    height: 70%;
-    width: 30%;
-    padding-right: 30px;
-  }
-  body .myFooter .subFooter .footerLeft .footerLink {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  body .myFooter .subFooter .footerLeft .footerLink .myLogoText {
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: 600;
-  }
-  body .myFooter .subFooter .footerLeft .redes {
-    width: 25px;
-    padding-right: 5px;
-    filter: brightness(0) saturate(100%) invert(98%) sepia(100%) saturate(8%) hue-rotate(118deg) brightness(102%) contrast(102%);
-  }
-  body .myFooter .footerMap {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
+  body .myMain .profileSection .secImgProf .iconProf4 {
+    top: 85%;
+    right: 70%;
   }
   body .myFooter .footerMap .colMap {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: flex-start;
     gap: 15px;
-    width: 25%;
-  }
-  body .myFooter .footerMap .colMap h5 {
-    font-weight: 600;
-  }
-  body .myFooter .footerMap .colMap ul {
-    height: 100%;
-    padding-left: 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-  }
-  body .myFooter .footerMap .colMap .myform {
-    display: flex;
-    flex-direction: row;
+    width: 35%;
   }
   body .myFooter .footerMap .colMap .myform .myInputMail {
-    background-color: #27292d;
-    border: #27292d solid 1px;
-    color: #f1f1f1;
-    padding: 10px;
-    border-radius: 10px 0 0 10px;
-  }
-  body .myFooter .footerMap .colMap .myform:focus {
-    outline: none;
-  }
-  body .myFooter .footerMap .colMap .myform .formEnvelope {
-    background-color: #27292d;
-    border: #27292d solid 1px;
-    font-size: 30px;
-    color: #f1f1f1;
-    border-radius: 0 10px 10px 0;
-  }
-  body .myFooter .myFooterAdd {
-    font-weight: 400;
-    text-align: center;
-    padding: 30px;
-    height: 50px;
+    width: 100%;
   }
   body .contentArrow {
     position: fixed;
@@ -798,14 +818,18 @@ body .contentArrow .arrow:hover {
   height: 130px;
   margin: 0 15px 30px 15px;
 }
-.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg h5 {
-  color: #f1f1f1;
-  font-size: 35px;
-  font-weight: 600;
-}
 .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg p {
   font-size: 18px;
   font-weight: 500;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg .myProgSub {
+  display: flex;
+  flex-direction: row;
+}
+.aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg .myProgSub h5 {
+  color: #f1f1f1;
+  font-size: 35px;
+  font-weight: 600;
 }
 .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .mp1 {
   border-radius: 10px;
@@ -900,7 +924,7 @@ body .contentArrow .arrow:hover {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 60px 0px 60px 0px;
+  padding: 60px 0;
 }
 .workExp .secExp1 {
   color: #f1f1f1;
@@ -925,9 +949,10 @@ body .contentArrow .arrow:hover {
 }
 .workExp .secExp2 .work {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: flex-start;
   align-items: center;
+  flex-wrap: wrap;
   background-color: #27292d;
   border-radius: 10px;
   color: #f1f1f1;
@@ -1051,7 +1076,7 @@ body .contentArrow .arrow:hover {
     left: 50%;
   }
   body .aboutMe .subAboutMe .sec1 .litCard .h4litCard {
-    padding: 25px 0px 25px 0px;
+    padding: 25px 0;
   }
   body .aboutMe .subAboutMe .sec2 {
     padding-top: 0;
@@ -1063,7 +1088,7 @@ body .contentArrow .arrow:hover {
     padding-top: 60px;
   }
   body .workExp {
-    padding: 80px 0px 80px 0px;
+    padding: 80px 0;
   }
   body .workExp .secExp1 .title2 {
     color: #f1f1f1;
@@ -1077,7 +1102,7 @@ body .contentArrow .arrow:hover {
     /*Work Experience */
   }
   body .aboutMe {
-    padding: 60px 0px 0 0px;
+    padding: 60px 0px 60px 0px;
   }
   body .aboutMe .subAboutMe {
     display: flex;
@@ -1141,7 +1166,7 @@ body .contentArrow .arrow:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 90px 0px 90px 0px;
+    padding: 90px 0;
     text-align: center;
   }
   body .workExp .secExp1 {
@@ -1177,6 +1202,7 @@ body .contentArrow .arrow:hover {
     font-size: 35px;
   }
   body .workExp .secExp2 .work img {
+    margin-top: 0px;
     width: 90px;
   }
   body .workExp .secExp2 .work p {
@@ -1198,7 +1224,6 @@ body .contentArrow .arrow:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    height: 100vh;
   }
   body .aboutMe .subAboutMe .sec1 .bigCard {
     width: 60%;
@@ -1237,12 +1262,14 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
     width: 100%;
     height: 120px;
+    margin-top: 0px;
   }
   body .workExp .secExp2 .work h3 {
     font-weight: 600;
     font-size: 35px;
   }
   body .workExp .secExp2 .work img {
+    margin-top: 0px;
     width: 90px;
   }
   body .workExp .secExp2 .work p {
@@ -1265,7 +1292,7 @@ body .contentArrow .arrow:hover {
 /*MIXINS*/
 .myServ {
   width: 100%;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -1280,9 +1307,8 @@ body .contentArrow .arrow:hover {
 }
 .myServ .subArt1 .title2 {
   color: #f1f1f1;
-  font-size: 50px;
-  font-weight: 600;
   font-size: 24px;
+  font-weight: 600;
 }
 .myServ .subArt1 .secciones1 {
   display: flex;
@@ -1291,22 +1317,29 @@ body .contentArrow .arrow:hover {
   align-items: center;
   gap: 30px;
   width: 100%;
-  padding: 60px 0 60px 0;
+  padding: 60px 0;
 }
 .myServ .subArt1 .secciones1 .btnSec {
-  width: 120px;
-  background-color: #555555;
-  padding: 15px 25px 15px 25px;
-  border-radius: 50px;
+  width: 27%;
+  background-color: #373737;
+  color: #f1f1f1;
+  border: 3px solid #373737;
   font-weight: 600;
   font-size: 14px;
-  text-align: center;
+  border-radius: 40px;
+  padding: 8px 0;
+  transition: 0s;
+}
+.myServ .subArt1 .secciones1 .btnSec:hover {
+  background-color: #242424;
+  color: #f1f1f1;
+  border: 3px solid #373737;
 }
 .myServ .subArt1 .secciones1 .btnSec a {
   color: #f1f1f1;
 }
 .myServ .subArt1 .secciones1 .btnactivo {
-  border: #555555 solid 3px;
+  border: #373737 solid 3px;
   background-color: rgba(0, 0, 0, 0);
 }
 .myServ .subArt1 .secciones1 .btnactivo a {
@@ -1325,10 +1358,11 @@ body .contentArrow .arrow:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  border: #555555 solid 2px;
+  border: #373737 solid 2px;
+  background-color: #232221;
   border-radius: 10px;
-  width: 350px;
-  height: 350px;
+  width: 55%;
+  height: 380px;
   padding: 20px;
   text-align: center;
 }
@@ -1338,7 +1372,7 @@ body .contentArrow .arrow:hover {
 }
 .myServ .subArt2 .myCards .divImgArt {
   width: fit-content;
-  background-color: #555555;
+  background-color: #373737;
   border-radius: 50%;
   padding: 30px;
 }
@@ -1417,17 +1451,25 @@ body .contentArrow .arrow:hover {
   font-weight: 800;
 }
 .pricing .planes .plan .planBtn {
-  color: #59c378;
+  background-color: #27292d;
+  color: #f1f1f1;
+  border: 1px solid #59c378;
   font-weight: 600;
-  border: #59c378 solid 1px;
-  width: fit-content;
+  font-size: 17px;
+  border-radius: 0;
   padding: 8px 28px;
-  margin-bottom: 50px;
   transition: 0.4s;
+  width: fit-content;
+  margin-bottom: 50px;
 }
 .pricing .planes .plan .planBtn:hover {
   background-color: #41b362;
   color: #f1f1f1;
+  border: 1px solid #59c378;
+}
+.pricing .planes .plan .planBtnAct {
+  background-color: #59c378;
+  color: #f1f1f1 !important;
 }
 
 /*Media Queries 540px to 768px*/
@@ -1442,17 +1484,53 @@ body .contentArrow .arrow:hover {
     font-size: 34px;
     font-weight: 600;
   }
-  /*Media Queries 1200px*/
 }
-@media only screen and (min-width: 540px) and (min-width: 1200px) {
-  body {
-    /*pricing*/
-  }
+/*Media Queries 768px to 992px*/
+@media only screen and (min-width: 768px) {
   body .myServ {
-    /* background: radial-gradient(circle at 15% -5%, $secondary-hover 0,8% , $dark-1-color 35%);*/
-    height: 100vh;
+    padding-bottom: 80px;
+  }
+  body .myServ .subArt1 .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+  body .myServ .subArt1 .secciones1 .btnSec {
+    background-color: #373737;
+    color: #f1f1f1;
+    border: 3px solid #373737;
+    font-weight: 500;
+    font-size: 18px;
+    border-radius: 40px;
+    padding: 15px 25px;
+    transition: 0.4s;
+  }
+  body .myServ .subArt1 .secciones1 .btnSec:hover {
+    background-color: #242424;
+    color: #f1f1f1;
+    border: 3px solid #373737;
+  }
+  body .myServ .subArt1 .secciones1 .btnactivo {
+    border: #373737 solid 3px;
+    background-color: rgba(0, 0, 0, 0);
+  }
+  body .myServ .subArt1 .secciones1 .btnactivo a {
+    color: #ffe600;
+  }
+  body .pricing {
+    padding-bottom: 80px;
+  }
+  body .pricing .pricingTitles .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+}
+/*Media Queries 992px to 1200px*/
+@media only screen and (min-width: 992px) {
+  body .myServ {
     width: 100%;
-    padding: 130px 0 130px 0;
+    padding: 90px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -1467,9 +1545,8 @@ body .contentArrow .arrow:hover {
   }
   body .myServ .subArt1 .title2 {
     color: #f1f1f1;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
-    font-size: 24px;
   }
   body .myServ .subArt1 .secciones1 {
     display: flex;
@@ -1478,11 +1555,12 @@ body .contentArrow .arrow:hover {
     align-items: center;
     gap: 30px;
     width: 100%;
-    padding: 50px 0 50px 0;
+    padding: 50px 0;
   }
   body .myServ .subArt1 .secciones1 .btnSec {
     width: 200px;
-    background-color: #555555;
+    background-color: #373737;
+    padding: 15px 0;
     padding: 15px 25px 15px 25px;
     border-radius: 50px;
     font-weight: 600;
@@ -1493,7 +1571,7 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
   }
   body .myServ .subArt1 .secciones1 .btnactivo {
-    border: #555555 solid 3px;
+    border: #373737 solid 3px;
     background-color: rgba(0, 0, 0, 0);
   }
   body .myServ .subArt1 .secciones1 .btnactivo a {
@@ -1508,11 +1586,7 @@ body .contentArrow .arrow:hover {
   }
   body .myServ .subArt2 .myCards {
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    border: #555555 solid 2px;
+    border: #373737 solid 2px;
     border-radius: 10px;
     width: 400px;
     height: 450px;
@@ -1524,7 +1598,7 @@ body .contentArrow .arrow:hover {
   }
   body .myServ .subArt2 .myCards .divImgArt {
     width: fit-content;
-    background-color: #555555;
+    background-color: #373737;
     border-radius: 50%;
     padding: 30px;
   }
@@ -1532,40 +1606,33 @@ body .contentArrow .arrow:hover {
     width: 60px;
     filter: invert(91%) sepia(15%) saturate(6851%) hue-rotate(2deg) brightness(107%) contrast(103%);
   }
-  body .pricing {
-    background: radial-gradient(circle at center center, #ffe203 0%, #242424 35%);
-    width: 100%;
-    height: 100vh;
+  /*pricing*/
+  .pricing {
+    padding: 90px 0;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  body .pricing .pricingTitles {
-    width: 35%;
+  .pricing .pricingTitles {
+    width: 50%;
   }
-  body .pricing .pricingTitles p {
+  .pricing .pricingTitles p {
     padding-top: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 80px;
   }
-  body .pricing .pricingTitles .title2 {
-    color: #f1f1f1;
-    font-size: 50px;
-    font-weight: 600;
-    font-size: 24px;
-  }
-  body .pricing .planes {
+  .pricing .planes {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     gap: 20px;
   }
-  body .pricing .planes li {
+  .pricing .planes li {
     padding-bottom: 10px;
   }
-  body .pricing .planes .plan {
+  .pricing .planes .plan {
     background-color: #27292d;
     height: 550px;
     text-align: center;
@@ -1575,30 +1642,30 @@ body .contentArrow .arrow:hover {
     align-items: center;
     color: #f1f1f1;
   }
-  body .pricing .planes .plan h4 {
+  .pricing .planes .plan h4 {
     font-size: 18px;
   }
-  body .pricing .planes .plan p {
+  .pricing .planes .plan p {
     font-size: 18px;
     width: 70%;
     padding-bottom: 30px;
     border-bottom: #59c378 solid 1px;
   }
-  body .pricing .planes .plan ul {
+  .pricing .planes .plan ul {
     padding-left: 0%;
   }
-  body .pricing .planes .plan .planType {
+  .pricing .planes .plan .planType {
     background-color: #59c378;
     font-size: 17px;
     width: fit-content;
     padding: 8px 28px;
     border-radius: 0 0 10px 10px;
   }
-  body .pricing .planes .plan .planType .mySpan {
+  .pricing .planes .plan .planType .mySpan {
     font-size: 40px;
     font-weight: 800;
   }
-  body .pricing .planes .plan .planBtn {
+  .pricing .planes .plan .planBtn {
     color: #59c378;
     font-weight: 600;
     border: #59c378 solid 1px;
@@ -1607,11 +1674,91 @@ body .contentArrow .arrow:hover {
     margin-bottom: 50px;
     transition: 0.4s;
   }
-  body .pricing .planes .plan .planBtn:hover {
+  .pricing .planes .plan .planBtn:hover {
     background-color: #41b362;
     color: #f1f1f1;
   }
 }
+/*Media Queries 1200px*/
+/*@media (min-width: 1200px ) {
+    body{
+        .myServ{ 
+
+            .subArt1{
+
+                .title2{
+
+                }
+                .secciones1{
+
+                    .btnSec{
+
+                        a{
+                        }
+                    }
+                    .btnactivo{
+
+                        a{
+                        }
+
+                    }
+                }
+            }
+            .subArt2{
+
+                .myCards{
+
+                    h3{
+
+                    }
+                    .divImgArt{
+
+                    }
+                    .imgArt{
+
+                    }
+                }
+            }
+        }
+
+
+
+        .pricing{
+
+            .pricingTitles{
+                p{
+                }
+                .title2{
+                }
+            }
+            .planes{
+                li{
+                }
+                .plan{
+
+                    h4{
+                    }
+                    p{
+
+                    }
+                    ul{
+                    }
+                    .planType{
+
+                        .mySpan{
+
+                        }
+                    }
+                    .planBtn{
+
+                        }
+                    }
+                }
+            }
+
+        }
+
+    }*/
 /*VARIABLES DE COLOR*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
@@ -1631,7 +1778,7 @@ body .contentArrow .arrow:hover {
   justify-content: space-between;
   align-items: center;
   text-align: center;
-  padding-top: 80px;
+  padding: 60px 0;
 }
 .portfolio2 .port2title .title2 {
   color: #f1f1f1;
@@ -1641,11 +1788,11 @@ body .contentArrow .arrow:hover {
 }
 .portfolio2 .port2title .port2TitleImg {
   width: fit-content;
-  background-color: #555555;
+  background-color: #373737;
   border-radius: 50%;
   padding: 30px;
   border: #27292d solid 10px;
-  outline: #555555 2px dashed;
+  outline: #373737 2px dashed;
 }
 .portfolio2 .port2title .port2TitleImg .workIcon {
   width: 60px;
@@ -1657,7 +1804,6 @@ body .contentArrow .arrow:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-top: 50px;
 }
 .portfolio2 .cardCont .contImg {
   overflow: hidden;
@@ -1705,8 +1851,7 @@ body .contentArrow .arrow:hover {
 /*Opinion*/
 .opinionBackground {
   background: radial-gradient(circle at 50% 70%, rgba(172, 138, 19, 0.4941176471) 0%, #242424 40%);
-  padding: 150px 0 60px 0;
-  padding: 150px 0px 60px 0px;
+  padding: 60px 0;
 }
 .opinionBackground .opinions {
   text-align: center;
@@ -1719,7 +1864,7 @@ body .contentArrow .arrow:hover {
 .opinionBackground .opinions .opinionImg {
   width: 30%;
   border-radius: 50%;
-  box-shadow: 0 0 0 10px #242424, 0 0 0 12px #aaaaaa, 0 0 0 24px #242424, 0 0 0 26px #555555, 0 0 0 38px #242424, 0 0 0 40px #27292d, 0 0 0 52px #242424, 0 0 0 54px #27292d;
+  box-shadow: 0 0 0 10px #242424, 0 0 0 12px #aaaaaa, 0 0 0 24px #242424, 0 0 0 26px #373737, 0 0 0 38px #242424, 0 0 0 40px #27292d, 0 0 0 52px #242424, 0 0 0 54px #27292d;
   margin-bottom: 90px;
 }
 .opinionBackground .opinions .opinionImg .imgopion {
@@ -1745,7 +1890,10 @@ body .contentArrow .arrow:hover {
 
 /*Media Queries 540px to 768px*/
 @media only screen and (min-width: 540px) {
-  body #myPortfolio .portfolio2 .title2 {
+  body #myPortfolio .portfolio2 .port2title .portText {
+    padding: 24px 0;
+  }
+  body #myPortfolio .portfolio2 .port2title .portText .title2 {
     color: #f1f1f1;
     font-size: 34px;
     font-weight: 600;
@@ -1754,18 +1902,27 @@ body .contentArrow .arrow:hover {
     height: 100% !important;
     width: 100% !important;
   }
-  body #myPortfolio .opinionBackground .opinions .opinionImg {
-    width: 50%;
+  body #myPortfolio .opinionBackground {
+    padding: 90px 0;
   }
 }
 /*Media Queries 768px*/
+@media only screen and (min-width: 768px) {
+  body #myPortfolio .portfolio2 .port2title .portText {
+    padding: 34px 0;
+  }
+  body #myPortfolio .portfolio2 .port2title .portText .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
+    font-weight: 600;
+  }
+}
 /*Media Queries 992px*/
 @media (min-width: 992px) {
   body {
     /*Opinion*/
   }
   body .portfolio2 {
-    height: 100vh;
     /*clases del carrousel*/
   }
   body .portfolio2 .port2title {
@@ -1773,19 +1930,24 @@ body .contentArrow .arrow:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    padding: 0 0;
   }
-  body .portfolio2 .port2title .title2 {
+  body .portfolio2 .port2title .portText {
+    text-align: left;
+    padding: 0 0;
+  }
+  body .portfolio2 .port2title .portText .title2 {
     color: #f1f1f1;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
   }
   body .portfolio2 .port2title .port2TitleImg {
     width: fit-content;
-    background-color: #555555;
+    background-color: #373737;
     border-radius: 50%;
     padding: 30px;
     border: #27292d solid 10px;
-    outline: #555555 2px dashed;
+    outline: #373737 2px dashed;
   }
   body .portfolio2 .port2title .port2TitleImg .workIcon {
     width: 60px;
@@ -1834,34 +1996,62 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
   }
   body .opinionBackground {
-    background-image: url("../img/bg-quotes.jpg");
-    background-repeat: no-repeat;
-    height: 100vh;
+    background: radial-gradient(circle at 75% 55%, rgba(172, 138, 19, 0.4941176471) 0%, #242424 30%);
     width: 100%;
+    height: 90vh;
   }
   body .opinionBackground .opinions {
-    height: 100vh;
+    width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    color: #f1f1f1;
+  }
+  body .opinionBackground .opinions .opinionImg {
+    width: 300px;
   }
   body .opinionBackground .opinions .opinionImg .imgopion {
-    width: 60%;
+    width: 300px;
   }
-  body .opinionBackground .opinions .opinionText h3 {
+  body .opinionBackground .opinions .opinionsText {
+    text-align: left;
+  }
+  body .opinionBackground .opinions .opinionsText .subOpinionText h3 {
     font-weight: 600;
   }
-  body .opinionBackground .opinions .opinionText p {
+  body .opinionBackground .opinions .opinionsText .subOpinionText p {
     font-size: 16px;
+    line-height: 35px;
   }
-  body .opinionBackground .opinions .opinionText h4 {
+  body .opinionBackground .opinions .opinionsText .subOpinionText h4 {
     font-weight: 600;
   }
-  body .opinionBackground .opinions .opinionText h4 span {
+  body .opinionBackground .opinions .opinionsText .subOpinionText h4 span {
     font-weight: 500;
     font-size: 14px;
+  }
+}
+/*Media Queries 1200px*/
+@media (min-width: 1200px) {
+  body {
+    /*Opinion*/
+  }
+  body .opinionBackground .opinions .opinionImg .subOpinionText h3 {
+    font-weight: 600;
+  }
+  body .opinionBackground .opinions .opinionImg .subOpinionText p {
+    font-size: 16px;
+    line-height: 35px;
+  }
+  body .opinionBackground .opinions .opinionImg .subOpinionText h4 {
+    font-weight: 600;
+  }
+  body .opinionBackground .opinions .opinionImg .subOpinionText h4 span {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  body .opinionBackground .opinions .opinionsText {
+    width: 40%;
   }
 }
 /*VARIABLES DE COLOR*/
@@ -1881,14 +2071,14 @@ body .contentArrow .arrow:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding-top: 100px;
 }
 .myBlog .blogTitle {
   text-align: center;
+  padding-bottom: 60px;
 }
 .myBlog .blogTitle .title2 {
   color: #f1f1f1;
-  font-size: 50px;
+  font-size: 24px;
   font-weight: 600;
 }
 .myBlog .owl-carousel .owl-nav.disabled {
@@ -1925,7 +2115,7 @@ body .contentArrow .arrow:hover {
   font-weight: 700;
 }
 .blogNews .myDateBlog {
-  background-color: #555555;
+  background-color: #373737;
   font-size: 14px;
   padding: 5px 8px;
   margin-top: 20px;
@@ -1939,24 +2129,45 @@ body .contentArrow .arrow:hover {
 }
 
 /*Media Queries 540px to 768px*/
-/*Media Queries 1200px*/
-@media (min-width: 1200px) {
+@media only screen and (min-width: 540px) {
   body .myBlog {
-    background-color: #242424;
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myBlog .blogTitle {
+    padding: 60px 0;
+  }
+  body .myBlog .blogTitle .title2 {
+    color: #f1f1f1;
+    font-size: 34px;
+    font-weight: 600;
+  }
+}
+/*Media Queries 992px*/
+@media (min-width: 992px) {
+  body .myBlog {
+    padding: 60px 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 100px;
   }
-  body .myBlog .blogTitle {
+  body .myBlog .pricingTitles {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  body .myBlog .pricingTitles .blogTitle {
     text-align: center;
+    width: 50%;
   }
-  body .myBlog .blogTitle .title2 {
+  body .myBlog .pricingTitles .blogTitle .title2 {
     color: #f1f1f1;
-    font-size: 50px;
+    font-size: 45px;
     font-weight: 600;
   }
   body .myBlog .owl-carousel .owl-nav.disabled {
@@ -1980,7 +2191,6 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
   }
   body .blogNews {
-    color: #f1f1f1;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1992,7 +2202,7 @@ body .contentArrow .arrow:hover {
     font-weight: 700;
   }
   body .blogNews .myDateBlog {
-    background-color: #555555;
+    background-color: #373737;
     font-size: 14px;
     padding: 5px 8px;
     margin-top: 20px;
@@ -2018,7 +2228,7 @@ body .contentArrow .arrow:hover {
   display: none;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
   body .myFooter .contactUs {
     display: block;
     background: url("../img/contact.png") no-repeat;
@@ -2064,7 +2274,6 @@ body .contentArrow .arrow:hover {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    padding-top: 80px;
   }
   body .myFooter .contactUs .subContact .h2Contact {
     color: #f1f1f1;

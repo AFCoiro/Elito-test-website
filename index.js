@@ -4,6 +4,7 @@ let myHome = document.getElementById("myHome");
 let iconProf1 = document.querySelectorAll(".iconProf1");
 let iconProf2 = document.querySelectorAll(".iconProf2");
 let iconProf3 = document.querySelectorAll(".iconProf3");
+let iconProf4 = document.querySelectorAll(".iconProf4");
 
 
 myHome.addEventListener('mousemove', (e) => {
@@ -13,6 +14,8 @@ myHome.addEventListener('mousemove', (e) => {
   iconProf1[0].style.transform = `translate(${mouse_x_position}px, ${mouse_y_position}px)`;
   iconProf2[0].style.transform = `translate(${mouse_x_position}px, ${mouse_y_position}px)`;
   iconProf3[0].style.transform = `translate(${mouse_x_position}px, ${mouse_y_position}px)`;
+  iconProf4[0].style.transform = `translate(${mouse_x_position}px, ${mouse_y_position}px)`;
+
 })
 
 /*Hidden Navbar */
@@ -26,7 +29,7 @@ if(scrollTop > lastScrollTop){
 }
 else{
     myHeader.style.top='0';
-    myHeader.style.backgroundColor= `#242424`;
+    myHeader.style.backgroundColor= `#000000`;
 }
 lastScrollTop = scrollTop;
 if(window.scrollY<=1){
@@ -34,10 +37,10 @@ if(window.scrollY<=1){
     let contentArrow = this.document.querySelector(".contentArrow").style.display = 'none';
   }else{
     let contentArrow = this.document.querySelector(".contentArrow").style.display = 'block';
-  }        
+  }
 });
 
-/*Asignar clase activa a los Li del navbar */      
+/*Asignar clase activa a los Li del navbar */
 let myLi = document.querySelectorAll(".myLi");
 
 for (let i = 0; i < myLi.length; i++) {
@@ -48,20 +51,21 @@ for (let i = 0; i < myLi.length; i++) {
       this.className += " activeLi";
     };
   }
-  /**/
+
+  /* asignar clase activa a los li del menu a medida que se hace scroll*/
 const sections = document.querySelectorAll("article[id]");
 
 window.addEventListener("scroll", ActiveScrollNav);
 
 function ActiveScrollNav() {
-  
+
   let myScroll = window.pageYOffset;
 
   sections.forEach(current => {
     const sectionHeight = current.offsetHeight;
     const sectionTop = current.offsetTop - 200;
     const sectionId = current.getAttribute("id");
-    
+
     if (
       myScroll > sectionTop &&
       myScroll <= sectionTop + sectionHeight
@@ -71,7 +75,7 @@ function ActiveScrollNav() {
       document.querySelector(".nav-item a[href*=" + sectionId + "]").classList.remove("activeLi");
     }
   });
-}
+};
 
 
 /*carrousel de jquery*/
@@ -100,7 +104,7 @@ autoplayHoverPause:true,
 })
 
 
-/*couner */
+/*counter */
 const counters = document.querySelectorAll(".counter");
 
 counters.forEach((counter)=>{
@@ -128,3 +132,5 @@ let nextC = document.querySelectorAll(".carousel-control-next");
 
 prevC[1].addEventListener("click",()=>{prevC[0].click()});
 nextC[1].addEventListener("click",()=>{nextC[0].click()});
+
+

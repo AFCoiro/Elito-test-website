@@ -29,7 +29,7 @@ body{
             }
             .myContNav{
                 @include displayFlex($jtfCont:space-between) ;
-                @include paddingX4( $top:10px, $right:30px, $bottom:10px, $left:30px );
+                @include paddingx2($height:10px,$width:0px);
                 .myOffCanvas{
                     background-color: $dark-1-color;
                     width: 70%;
@@ -40,6 +40,8 @@ body{
                 .myButton{
                     order: -1;
                     background-color: $primary-color;
+                    border-radius: 0px;
+                    height: 50px;
                     span{
                         filter: $light-1-color-icon;
                     } 
@@ -65,7 +67,7 @@ body{
             .myNavRight{
                 @include displayFlex;
                 .btnCv{
-                    @include bnt1($padding:10px 14px);    
+                    @include bnt1($padding:14px 20px); 
                 }
             }
     }
@@ -95,7 +97,8 @@ body{
                         margin-bottom:$titPadding;
                     }
                     .btnMain{
-                        @include bnt1($padding:10px 14px);
+                        @include bnt1($padding:14px 20px);
+
                     }
                 }
                 .secImgProf{
@@ -123,6 +126,10 @@ body{
                     .iconProf3{
                     top: 75%;
                     right: 0%;
+                    }
+                    .iconProf4{
+                    top: 75%;
+                    right: 70%;                    
                     }
                 }
         }    
@@ -173,6 +180,9 @@ body{
                             height: 100%;
                             padding-left: 0%;
                             @include displayFlex ($flxDir:column, $jtfCont:space-between, $algnItm:flex-start);
+                            a{
+                                color: $light-1-color;
+                            }
                         }
                         .myform{
                             display: flex;
@@ -182,7 +192,7 @@ body{
                                 border: $dark-2-color solid 1px;
                                 color: $light-1-color;
                                 padding: 10px;
-                                border-radius: 10px 0 0 10px;
+                                border-radius: 5px 0 0 5px;
                             }
                             &:focus{
                                 outline: none;
@@ -192,7 +202,7 @@ body{
                                 border: $dark-2-color solid 1px;
                                 font-size: 30px;
                                 color: $light-1-color;
-                                border-radius:  0 10px 10px 0;
+                                border-radius:  0 5px 5px 0;
                             }
                         }
                     }
@@ -238,7 +248,7 @@ body{
         }
         .myNavRight{
             .btnCv{
-                @include bnt1($fntW:700);    
+                @include bnt1($fntW:700,$padding:16px 30px);    
             }
         }
     }
@@ -249,7 +259,7 @@ body{
                     @include h2Title($clr:$secondary-color, $fntS:35px,$fntW:800);
                 }
                 .btnMain{
-                    @include bnt1($padding:15px 18px,$fntW:700);
+                    @include bnt1($fntW:700,$padding:16px 30px);
                 }
             }    
             .secImgProf{
@@ -282,16 +292,17 @@ body{
                         width: 25%;
                     }
                     .iconProf1{
-                    right: 80%;
+                        right: 80%;
                     }
                     .iconProf2{
-
-                    right: -10%;
+                        right: -10%;
                     }
                     .iconProf3{
-
-                    right: -10%;
+                        right: -10%;
                     }
+                    .iconProf4{
+                        right: 80%;                    
+                        }
                 }
         }    
     }
@@ -304,7 +315,7 @@ body{
     .myHeader{
         .myContNav{
             @include displayFlex($jtfCont:center);
-            @include paddingX4( $top:10px, $right:30px, $bottom:10px, $left:30px );
+            @include paddingx2($height:10px,$width:30px);
             .myButton{
                 order: 0;
                 background-color: $primary-color;
@@ -368,7 +379,84 @@ body{
                 top:75%;
                 right:10%;
             }
+            .iconProf4{
+                top:75%;
+                right: 65%;                    
+                }
         }
+    }
+}
+.myFooter{
+    background-color: $dark-1-color;
+    color: $light-1-color;
+    font-size: 16px;
+    p{
+        font-size: 16px;
+    }
+    .subFooter{
+        background: radial-gradient(circle at 70% 30% , $primary-color 0%, $dark-1-color 40%);
+        @include displayFlex ($jtfCont:space-between);
+        border-bottom: $dark-2-color 2px solid;
+        .footerLeft{
+            border-right: $dark-2-color 2px solid;
+            @include displayFlex ($flxDir:column, $jtfCont:space-evenly,$algnItm:flex-start);
+            gap:10px;
+            height: 80%;
+            width: 30%;
+            .footerLink{
+                @include displayFlex;
+                .myLogoText{
+                    @include h2Title($clr:$light-1-color, $fntS:40px,$fntW:600);
+                }
+            }
+
+            .redes{
+                width: 25px;
+                padding-right: 5px;
+                filter: $light-2-color-icon;
+            }
+        }
+    }
+    .footerMap{
+        @include displayFlex ($jtfCont:space-evenly,$algnItm:start);
+        .colMap{
+            @include displayFlex ($flxDir:column, $jtfCont:space-evenly,$algnItm:flex-start);
+            gap: 15px;
+            width: 25%;
+            li{
+                padding-bottom: 15px;
+            }
+            .myform{
+                display: flex;
+                flex-direction: row;
+                .myInputMail{
+                    background-color: $dark-2-color;
+                    border: $dark-2-color solid 1px;
+                    color: $light-1-color;
+                    padding: 10px;
+                    width:80%;
+                }
+                &:focus{
+                    outline: none;
+                }
+                .formEnvelope{
+                    background-color: $dark-2-color;
+                    border: $dark-2-color solid 1px;
+                    font-size: 30px;
+                    color: $light-1-color;
+                }
+            }
+        }
+        .colMapMail{
+            width: 35%;
+        }
+    }
+    
+    .myFooterAdd{
+        font-weight:400;
+        text-align: center;
+        padding: 30px;
+        height: 50px;
     }
 }
 }
@@ -384,7 +472,7 @@ body{
             }
             .myContNav{
                 order: 0;
-                @include paddingX4( $top:10px, $bottom:10px);
+                @include paddingx2($height:10px,$width:30px);
                 .myNavbar{
                     @include displayFlex;
                     .myUl{
@@ -416,7 +504,7 @@ body{
             }
         }
         .myMain{
-            padding-bottom: 5%; 
+            padding-bottom: 5%;  
             .profileSection{
                 @include displayFlex ($jtfCont:space-between);
                 .profileText{
@@ -444,7 +532,7 @@ body{
                         width: 95%;
                     }
                     .floatIcon{
-                        width: 17%;
+                        width: 20%;
                         border: $light-1-color solid 20px;
                     }
                     .iconProf1{
@@ -459,94 +547,26 @@ body{
                     top: 85%;
                     right: 0%;
                     }
+                    .iconProf4{
+                    top:85%;
+                    right: 70%;                    
+                    }
                     }
             }
             
         } 
         .myFooter{
-            background-color: $dark-1-color;
-            color: $light-1-color;
-            font-size: 16px;
-            p{
-                font-size: 16px;
-            }
-            .subFooter{
-                height: 60vh;
-                background: radial-gradient(circle at 70% 30% , $primary-color 0%, $dark-1-color 40%);
-                @include displayFlex ($jtfCont:space-between);
-                border-bottom: $dark-2-color 2px solid;
-    
-                .footerLeft{
-                    border-right: $dark-2-color 2px solid;
-                    @include displayFlex ($flxDir:column, $jtfCont:space-evenly,$algnItm:flex-start);
-                    height: 70%;
-                    width: 30%;
-                    padding-right: 30px;
-    
-                    .footerLink{
-                        @include displayFlex;
-                        .myLogoText{
-                            @include h2Title($clr:$light-1-color, $fntS:40px,$fntW:600);
-                        }
-                    }
-    
-                    .redes{
-                        width: 25px;
-                        padding-right: 5px;
-                        filter: brightness(0)
-                                saturate(100%)
-                                invert(98%)
-                                sepia(100%)
-                                saturate(8%)
-                                hue-rotate(118deg) 
-                                brightness(102%)
-                                contrast(102%);
-                    }
-                }
-            }
             .footerMap{
-                @include displayFlex ($jtfCont:space-evenly);
                 .colMap{
-                    @include displayFlex ($flxDir:column, $jtfCont:space-evenly,$algnItm:flex-start);
                     gap: 15px;
-                    width: 25%;
-                    h5{
-                        font-weight: 600;
-                    }
-                    ul{
-                        height: 100%;
-                        padding-left: 0%;
-                        @include displayFlex ($flxDir:column, $jtfCont:space-between);
-                    }
+                    width: 35%;
                     .myform{
-                        display: flex;
-                        flex-direction: row;
                         .myInputMail{
-                            background-color: $dark-2-color;
-                            border: $dark-2-color solid 1px;
-                            color: $light-1-color;
-                            padding: 10px;
-                            border-radius: 10px 0 0 10px;
-                        }
-                        &:focus{
-                            outline: none;
-                        }
-                        .formEnvelope{
-                            background-color: $dark-2-color;
-                            border: $dark-2-color solid 1px;
-                            font-size: 30px;
-                            color: $light-1-color;
-                            border-radius:  0 10px 10px 0;
+                            width:100%;
+                        
                         }
                     }
                 }
-            }
-            
-            .myFooterAdd{
-                font-weight:400;
-                text-align: center;
-                padding: 30px;
-                height: 50px;
             }
         }
         .contentArrow{
