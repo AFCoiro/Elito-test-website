@@ -775,7 +775,7 @@ body .contentArrow .arrow:hover {
   width: 300px;
   position: absolute;
   top: 65%;
-  left: 60%;
+  left: 35%;
   z-index: 1;
 }
 .aboutMe .subAboutMe .sec1 .litCard p {
@@ -814,7 +814,7 @@ body .contentArrow .arrow:hover {
   margin-bottom: 30px;
 }
 .aboutMe .subAboutMe .sec2 .skillsCont .skillsSub .myProg {
-  width: 42.33%;
+  width: 40%;
   height: 130px;
   margin: 0 15px 30px 15px;
 }
