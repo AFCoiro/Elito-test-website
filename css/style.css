@@ -957,7 +957,7 @@ body .contentArrow .arrow:hover {
   border-radius: 10px;
   color: #f1f1f1;
   width: 100%;
-  height: 180px;
+  height: fit-content;
   text-align: start;
 }
 .workExp .secExp2 .work h3 {
@@ -1361,7 +1361,7 @@ body .contentArrow .arrow:hover {
   border: #373737 solid 2px;
   background-color: #232221;
   border-radius: 10px;
-  width: 55%;
+  width: 70%;
   height: 380px;
   padding: 20px;
   text-align: center;
