@@ -65,7 +65,7 @@
 /*Opinion*/
 
 .opinionBackground{
-    background: radial-gradient(circle at 50% 70% , $secondaryT-1-color 0%, $dark-1-color 40%);
+    background: radial-gradient(circle at 50% 70% , $bg-yw 0%, $dark-1-color 40%);
     @include paddingx2;
      .opinions{
         text-align:center;
@@ -227,10 +227,9 @@ body{
         /*Opinion*/
         
         .opinionBackground{
-            background: radial-gradient(circle at 75% 55% , $secondaryT-1-color 0%, $dark-1-color 30%);
-
+            background: radial-gradient(circle at 70% 40% , $bg-yw 0%, $dark-1-color 40%);
              width: 100%;
-             height:90vh;
+             @include paddingx2;
              .opinions{
                 width: 100%;
                 @include displayFlex($jtfCont:space-evenly);

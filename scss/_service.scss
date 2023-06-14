@@ -71,7 +71,8 @@
 /*pricing*/
 
 .pricing{
-    background: radial-gradient(circle at center center, $secondary-hover 0% , $dark-1-color 35%);
+    background: radial-gradient(circle at center center, $bg-gr 0% , $dark-1-color 70%);
+
     width: 100%;
     text-align: center;
     @include displayFlex ($flxDir:column);

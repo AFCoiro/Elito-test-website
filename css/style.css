@@ -1,5 +1,8 @@
 @charset "UTF-8";
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -9,6 +12,9 @@
 /*padding de secciones grande*/
 /*MIXINS*/
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -194,7 +200,7 @@ body .myMain .profileSection .secImgProf .iconProf4 {
   right: 70%;
 }
 body .myFooter {
-  background-color: #242424;
+  background: linear-gradient(#242424 0%, black 50%);
   color: #f1f1f1;
   font-size: 16px;
 }
@@ -202,7 +208,6 @@ body .myFooter p {
   font-size: 16px;
 }
 body .myFooter .subFooter {
-  background: radial-gradient(circle at 70% 40%, #59c378 0%, #242424 50%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -287,8 +292,8 @@ body .myFooter .footerMap .colMap .myform .formEnvelope {
 body .myFooter .myFooterAdd {
   font-weight: 400;
   text-align: center;
-  padding: 30px;
-  height: 50px;
+  padding: 20px;
+  margin-bottom: 0 !important;
 }
 body .contentArrow {
   position: fixed;
@@ -488,7 +493,6 @@ body .contentArrow .arrow:hover {
     font-size: 16px;
   }
   body .myFooter .subFooter {
-    background: radial-gradient(circle at 70% 30%, #59c378 0%, #242424 40%);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -562,10 +566,9 @@ body .contentArrow .arrow:hover {
     width: 35%;
   }
   body .myFooter .myFooterAdd {
+    background-color: black;
     font-weight: 400;
     text-align: center;
-    padding: 30px;
-    height: 50px;
   }
 }
 /*Media Queries < 1200px*/
@@ -724,6 +727,9 @@ body .contentArrow .arrow:hover {
   }
 }
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -733,7 +739,7 @@ body .contentArrow .arrow:hover {
 /*padding de secciones grande*/
 /*MIXINS*/
 .aboutMe {
-  background: radial-gradient(circle at 25% center, #27292d, #242424, #49086e);
+  background: radial-gradient(circle at 25% center, #27292d, #242424, #2d0544);
   padding: 60px 0px 60px 10px;
 }
 .aboutMe .subAboutMe {
@@ -781,7 +787,13 @@ body .contentArrow .arrow:hover {
 .aboutMe .subAboutMe .sec1 .litCard p {
   color: #f1f1f1;
 }
-.aboutMe .subAboutMe .sec1 .litCard .h4litCard {
+.aboutMe .subAboutMe .sec1 .litCard .litCard100 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.aboutMe .subAboutMe .sec1 .litCard .litCard100 .h4litCard {
   color: #59c378;
   font-size: 40px;
   font-weight: 600;
@@ -918,7 +930,7 @@ body .contentArrow .arrow:hover {
 
 /*Work Experience */
 .workExp {
-  background: radial-gradient(circle at center center, #dd503c 0%, #242424 55%);
+  background: radial-gradient(circle at center center, #521e17 0%, #242424 55%);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -990,7 +1002,7 @@ body .contentArrow .arrow:hover {
     /*Work Experience */
   }
   body .aboutMe {
-    background: radial-gradient(circle at 25% center, #27292d, #242424, #49086e);
+    background: radial-gradient(circle at 25% center, #27292d, #242424, #2d0544);
   }
   body .aboutMe .subAboutMe {
     display: flex;
@@ -1232,6 +1244,11 @@ body .contentArrow .arrow:hover {
   body .aboutMe .subAboutMe .sec1 .litCard {
     top: 65%;
     left: 30%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
   }
   body .aboutMe .subAboutMe .sec2 .title2 {
     color: #f1f1f1;
@@ -1282,6 +1299,9 @@ body .contentArrow .arrow:hover {
   }
 }
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -1383,7 +1403,7 @@ body .contentArrow .arrow:hover {
 
 /*pricing*/
 .pricing {
-  background: radial-gradient(circle at center center, #ffe203 0%, #242424 35%);
+  background: radial-gradient(circle at center center, #1a4626 0%, #242424 70%);
   width: 100%;
   text-align: center;
   display: flex;
@@ -1760,6 +1780,9 @@ body .contentArrow .arrow:hover {
 
     }*/
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -1850,7 +1873,7 @@ body .contentArrow .arrow:hover {
 
 /*Opinion*/
 .opinionBackground {
-  background: radial-gradient(circle at 50% 70%, rgba(172, 138, 19, 0.4941176471) 0%, #242424 40%);
+  background: radial-gradient(circle at 50% 70%, #423c01 0%, #242424 40%);
   padding: 60px 0;
 }
 .opinionBackground .opinions {
@@ -1996,9 +2019,9 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
   }
   body .opinionBackground {
-    background: radial-gradient(circle at 75% 55%, rgba(172, 138, 19, 0.4941176471) 0%, #242424 30%);
+    background: radial-gradient(circle at 70% 40%, #423c01 0%, #242424 40%);
     width: 100%;
-    height: 90vh;
+    padding: 60px 0;
   }
   body .opinionBackground .opinions {
     width: 100%;
@@ -2055,6 +2078,9 @@ body .contentArrow .arrow:hover {
   }
 }
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -2216,6 +2242,9 @@ body .contentArrow .arrow:hover {
   }
 }
 /*VARIABLES DE COLOR*/
+/*program colors*/
+/*Backgrounds*/
+/*Darks and Whites*/
 /*TIME in Transition*/
 /*Título para hasta 540*/
 /*Título para hasta 768*/
@@ -2231,8 +2260,7 @@ body .contentArrow .arrow:hover {
 @media (min-width: 992px) {
   body .myFooter .contactUs {
     display: block;
-    background: url("../img/contact.png") no-repeat;
-    width: 95%;
+    background: url("../img/contact.png") repeat;
     height: 300px;
     margin-top: 100px;
   }
@@ -2263,8 +2291,6 @@ body .contentArrow .arrow:hover {
 @media (min-width: 1200px) {
   body .myFooter .contactUs {
     display: block;
-    background: url("../img/contact.png") no-repeat;
-    width: 90%;
     height: 300px;
     margin-top: 100px;
   }
