@@ -267,7 +267,9 @@ body{
 /*Media Queries 1200px*/
 @media (min-width: 1200px ) {
 body{
-
+        .portfolio2{
+            @include paddingx2($height:$titPadding90);
+        }
      /*Opinion*/
         .opinionBackground{
             .opinions{

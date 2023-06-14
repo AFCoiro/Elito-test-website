@@ -373,6 +373,16 @@ body .contentArrow .arrow:hover {
   body .myMain {
     padding-bottom: 80px;
   }
+  body .myMain .profileSection .profileText .myH1 {
+    color: #ffe600;
+    font-size: 40px;
+    font-weight: 800;
+  }
+  body .myMain .profileSection .profileText .myH1 .mySpam {
+    color: #f1f1f1;
+    font-size: 55px;
+    font-weight: 800;
+  }
   body .myMain .profileSection .secImgProf .myProfImg {
     width: 450px;
   }
@@ -431,16 +441,6 @@ body .contentArrow .arrow:hover {
     justify-content: space-between;
     align-items: center;
     text-align: start;
-  }
-  body .myMain .profileSection .profileText .myH1 {
-    color: #ffe600;
-    font-size: 40px;
-    font-weight: 800;
-  }
-  body .myMain .profileSection .profileText .myH1 .mySpam {
-    color: #f1f1f1;
-    font-size: 55px;
-    font-weight: 800;
   }
   body .myMain .profileSection .profileText .profileH2 {
     color: #59c378;
@@ -1546,7 +1546,7 @@ body .contentArrow .arrow:hover {
     font-weight: 600;
   }
 }
-/*Media Queries 992px to 1200px*/
+/*Media Queries 992px <*/
 @media only screen and (min-width: 992px) {
   body .myServ {
     width: 100%;
@@ -1699,86 +1699,6 @@ body .contentArrow .arrow:hover {
     color: #f1f1f1;
   }
 }
-/*Media Queries 1200px*/
-/*@media (min-width: 1200px ) {
-    body{
-        .myServ{ 
-
-            .subArt1{
-
-                .title2{
-
-                }
-                .secciones1{
-
-                    .btnSec{
-
-                        a{
-                        }
-                    }
-                    .btnactivo{
-
-                        a{
-                        }
-
-                    }
-                }
-            }
-            .subArt2{
-
-                .myCards{
-
-                    h3{
-
-                    }
-                    .divImgArt{
-
-                    }
-                    .imgArt{
-
-                    }
-                }
-            }
-        }
-
-
-
-        .pricing{
-
-            .pricingTitles{
-                p{
-                }
-                .title2{
-                }
-            }
-            .planes{
-                li{
-                }
-                .plan{
-
-                    h4{
-                    }
-                    p{
-
-                    }
-                    ul{
-                    }
-                    .planType{
-
-                        .mySpan{
-
-                        }
-                    }
-                    .planBtn{
-
-                        }
-                    }
-                }
-            }
-
-        }
-
-    }*/
 /*VARIABLES DE COLOR*/
 /*program colors*/
 /*Backgrounds*/
@@ -2059,6 +1979,9 @@ body .contentArrow .arrow:hover {
   body {
     /*Opinion*/
   }
+  body .portfolio2 {
+    padding: 90px 0;
+  }
   body .opinionBackground .opinions .opinionImg .subOpinionText h3 {
     font-weight: 600;
   }
@@ -2168,6 +2091,13 @@ body .contentArrow .arrow:hover {
   body .myBlog .blogTitle .title2 {
     color: #f1f1f1;
     font-size: 34px;
+    font-weight: 600;
+  }
+}
+@media only screen and (min-width: 540px) and (min-width: 768px) {
+  body .myBlog .blogTitle .title2 {
+    color: #f1f1f1;
+    font-size: 45px;
     font-weight: 600;
   }
 }

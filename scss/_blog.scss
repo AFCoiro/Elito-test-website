@@ -52,6 +52,9 @@ body{
             @include paddingx2;
             .title2{
                 @include h2Title($fntS:$tit700);
+                @media only screen and (min-width: 768px){
+                    @include h2Title($fntS:$tit900); 
+                }
             }
         }
     }

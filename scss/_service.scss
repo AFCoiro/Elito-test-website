@@ -71,8 +71,7 @@
 /*pricing*/
 
 .pricing{
-    background: radial-gradient(circle at center center, $bg-gr 0% , $dark-1-color 70%);
-
+    background: radial-gradient(circle at center center , $bg-gr 0% , $dark-1-color 70%);
     width: 100%;
     text-align: center;
     @include displayFlex ($flxDir:column);
@@ -197,7 +196,7 @@
     }
 }
 
-/*Media Queries 992px to 1200px*/
+/*Media Queries 992px <*/
 @media only screen and (min-width: 992px){
 body{
         .myServ{ 
@@ -332,87 +331,4 @@ body{
          
         }
     }
-
-
-/*Media Queries 1200px*/
-/*@media (min-width: 1200px ) {
-    body{
-        .myServ{ 
-            
-            .subArt1{
-               
-                .title2{
-
-                }
-                .secciones1{
-
-                    .btnSec{
-                        
-                        a{
-                        }
-                    }
-                    .btnactivo{
-                       
-                        a{
-                        }
-                        
-                    }
-                }
-            }
-            .subArt2{
-               
-                .myCards{
-                   
-                    h3{
-                      
-                    }
-                    .divImgArt{
-                        
-                    }
-                    .imgArt{
-                       
-                    }
-                }
-            }
-        }
-        
-
-        
-        .pricing{
-            
-            .pricingTitles{
-                p{
-                }
-                .title2{
-                }
-            }
-            .planes{
-                li{
-                }
-                .plan{
-
-                    h4{
-                    }
-                    p{
-
-                    }
-                    ul{
-                    }
-                    .planType{
-                       
-                        .mySpan{
-                           
-                        }
-                    }
-                    .planBtn{
-                       
-                        }
-                    }
-                }
-            }
-         
-        }
-        
-    }*/ 
-
 

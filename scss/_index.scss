@@ -284,6 +284,14 @@ body{
     .myMain{
         padding-bottom: $titPadding80;
         .profileSection{
+            .profileText{
+                .myH1{
+                    @include h2Title($clr:$secondary-color, $fntS:40px,$fntW:800);
+                    .mySpam{
+                        @include h2Title($clr:$light-1-color, $fntS:55px,$fntW:800);
+                    }
+                }
+            }
                 .secImgProf{
                     .myProfImg{
                         width: 450px;
@@ -347,12 +355,7 @@ body{
         @include displayFlex ($jtfCont:space-between);
         text-align: start;
         .profileText{
-            .myH1{
-                @include h2Title($clr:$secondary-color, $fntS:40px,$fntW:800);
-                .mySpam{
-                    @include h2Title($clr:$light-1-color, $fntS:55px,$fntW:800);
-                }
-            }
+
             .profileH2{
                     @include h2Title($clr:$primary-color, $fntS:25px,$fntW:600);
             }
