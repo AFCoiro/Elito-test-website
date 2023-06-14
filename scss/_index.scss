@@ -136,14 +136,14 @@ body{
     }
     /*footer*/
     .myFooter{
-                background-color: $dark-1-color;
+        background:linear-gradient($dark-1-color 0%, $dark-color 50%);
                 color: $light-1-color;
                 font-size: 16px;
                 p{
                     font-size: 16px;
                 }
                 .subFooter{
-                    background: radial-gradient(circle at 70% 40% , $primary-color 0%, $dark-1-color 50%);
+                    
                     @include displayFlex ($flxDir:column, $jtfCont:flex-start);
                     border-bottom: $dark-2-color 2px solid;
         
@@ -211,8 +211,8 @@ body{
                 .myFooterAdd{
                     font-weight:400;
                     text-align: center;
-                    padding: 30px;
-                    height: 50px;
+                    padding: 20px;
+                    margin-bottom:0 !important;
                 }
     }
     .contentArrow{
@@ -394,7 +394,6 @@ body{
         font-size: 16px;
     }
     .subFooter{
-        background: radial-gradient(circle at 70% 30% , $primary-color 0%, $dark-1-color 40%);
         @include displayFlex ($jtfCont:space-between);
         border-bottom: $dark-2-color 2px solid;
         .footerLeft{
@@ -453,10 +452,9 @@ body{
     }
     
     .myFooterAdd{
+        background-color: $dark-color;
         font-weight:400;
         text-align: center;
-        padding: 30px;
-        height: 50px;
     }
 }
 }

@@ -8,7 +8,9 @@ for (let i = 0; i < planBtn.length; i++) {
   planBtn[i].addEventListener("click",fnActive);
   function fnActive() {
     let activo = document.getElementsByClassName(" planBtnAct");
-    activo[0].className = activo[0].className.replace(" planBtnAct", "");
+    if (activo.length > 0) {
+      activo[0].className = activo[0].className.replace(" planBtnAct", "");
+    }
     this.className += " planBtnAct";
 
     selectPlan = plan[i].name;
