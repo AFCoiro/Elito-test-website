@@ -14,13 +14,16 @@
 <li>Javascript</li>
 </ul>
 
+<br>
+<br>
 
 # 📁 Acceso al proyecto
 
-# 👉 https://afcoiro.github.io/Elito-test-website/
+## 👉   https://afcoiro.github.io/Elito-test-website/
 
+<br>
 
 # 🌐 Acceso al sitio replicado
 
-# 👉 https://wpocean.com/html/tf/elito-live/index.html
+## 👉  https://wpocean.com/html/tf/elito-live/index.html
 
