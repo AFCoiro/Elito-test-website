@@ -1,8 +1,26 @@
-# Elito-test-website
+<h1 align="center">Elito-test-website</h1>
 
-Desarrollé un sitio web utilizando HTML, CSS, SCSS y JS, replicando fielmente un diseño existente. Este proyecto tuvo como objetivo principal aumentar mi experiencia y ampliar mi portfolio como desarrollador web. 
+# 📝 Descripción del proyecto
 
-Durante el proceso, pude demostrar mis habilidades al traducir un diseño visual en código, utilizando una estructura HTML sólida, estilos CSS y SCSS responsivos, y agregando interactividad con JavaScript. 
+<p>Este sitio web fue desarrollado sobre la base de un diseño preexistente, al cual le realice modificaciones que mejoran tanto aspectos visuales como funcionales, según mi criterio. Puse un enfoque especial en asegurar la responsividad del sitio, incorporando detalles de JavaScript para agregar animaciones en diversas secciones, mejorar la interactividad del menú y permitir el almacenamiento de información en el local storage y en un array personalizado.</p>
 
-*Link del sitio:
-https://afcoiro.github.io/Elito-test-website/
+<p></p>
+
+# 🛠️ Tecnologías utilizadas
+
+<ul> 
+<li>Html</li>
+<li>css/scss</li>
+<li>Javascript</li>
+</ul>
+
+
+# 📁 Acceso al proyecto
+
+# 👉 https://afcoiro.github.io/Elito-test-website/
+
+
+# 🌐 Acceso al sitio replicado
+
+# 👉 https://wpocean.com/html/tf/elito-live/index.html
+
